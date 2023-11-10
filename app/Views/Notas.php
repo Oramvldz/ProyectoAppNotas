@@ -26,7 +26,7 @@
       </ul>
       <ul class="navbar-nav ms-auto">
         <li class="navbar-item">
-        <a class="nav-link active" aria-current="page" href="<?=base_url("/Perfil")?>">Cerrar sesion</a>
+        <a class="nav-link active" aria-current="page" href="<?=base_url("/CerrarSesion/Process")?>">Cerrar sesion</a>
         </li>
       </ul>
     </div>

@@ -19,6 +19,7 @@ $routes->get("/Perfil/Cambiar_Contraseña","UsuarioController::VistaCambiarContr
 //Process
 $routes->post("/Registro/Process","UsuarioController::RegistroUsuario");
 $routes->post("/Login/Process","UsuarioController::Login");
+$routes->get("/CerrarSesion/Process","UsuarioController::SignOut");
 //Devuelve vistas Notas
 $routes->get("/MisNotas/CrearNota","NotasController::CrearNota");
 $routes->get("/MisNotas","NotasController::Notas");

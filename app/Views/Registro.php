@@ -9,6 +9,15 @@
 </head>
 <body style="background-color: #DFFFD8;">
     <!--Para hacer el cuadro se necesitan 2 divs-->
+
+    <?php if($mensaje==2):?>
+        <div class="alert alert-danger alert-dismissible">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            Ya esta registrado ese correo, intentelo de nuevo
+        </div>
+    <?php endif; ?>
+
+
     <div class="d-flex justify-content-center align-items-center vh-100">
         <div class="bg-white p-5 rounded-5 text-secondary shadow" style="width: 25rem">
 

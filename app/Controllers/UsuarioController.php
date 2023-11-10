@@ -11,12 +11,18 @@ class UsuarioController extends ResourceController
         //Retorna vistas Usuarios
         public function VistaLogin()
         {
-            return view("login");
+            //no funciona
+            if(!session()->Is_Logged)
+            {
+                $mensaje=session('mensaje');
+                return view("login",compact('mensaje'));
+            }
         }
 
         public function VistaRegistro()
         {
-            return view("registro");
+            $mensaje=session('mensaje');
+            return view("registro",compact('mensaje'));
         }
     
         public function VistaPerfil()
@@ -43,7 +49,8 @@ class UsuarioController extends ResourceController
 
             if(count($UsuarioEncontrado)>0)
             {
-                return $this->respond($UsuarioEncontrado);
+                //return $this->respond($UsuarioEncontrado);
+                return redirect()->to(base_url('/Registro'))->with('mensaje','2');
             }
             else
             {
@@ -54,7 +61,7 @@ class UsuarioController extends ResourceController
                         'Nombres'=>$this->request->getVar('Nombres'),
                         'Apellidos'=>$this->request->getVar('Apellidos')
                     ]);
-                    return redirect()->to(base_url('/Login'));
+                    return redirect()->to(base_url('/Login'))->with('mensaje','1');
                 }catch(\Exception $e){
                     return $e->getMessage();
                 }
@@ -69,22 +76,43 @@ class UsuarioController extends ResourceController
             if(count($UsuarioEncontrado)>0)
             {
                 return redirect()->to(base_url('/MisNotas'));
+                //es como si no exisitiera session
+                session()->set([
+                    'Id_usuario'=>$UsuarioEncontrado['Id'],
+                    'Email'=>$UsuarioEncontrado['Email'],
+                    'Nombres'=>$UsuarioEncontrado['Nombres'],
+                    'Apellidos'=>$UsuarioEncontrado['Apellidos'],
+                    'Is_Logged'=>true
+                ]);
             }
             else
             {
-                return redirect()->to(base_url('/Login'));
+                return redirect()->to(base_url('/Login'))->with('mensaje','3');
             }
         }
         
+        public function SignOut()
+        {
+            //session no funcional
+            session()->destroy();
+            return redirect()->to(base_url('/Login'));
+        }
 
 
 
+
+
+
+
+
+
+
+    //API
     /**
      * Return an array of resource objects, themselves in array format
      *
      * @return mixed
      */
-    //API
     public function index()
     {
         $UsuarioModel= new UsuarioModel();

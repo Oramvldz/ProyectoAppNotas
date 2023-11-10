@@ -21,7 +21,7 @@ class NotasController extends ResourceController
      //vistas
      public function Notas()
      {
-        return view("Notas");
+         return view("Notas");
      }
 
      public function CrearNota()

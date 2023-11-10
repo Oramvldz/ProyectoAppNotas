@@ -8,6 +8,19 @@
     <link rel="stylesheet" href="<?=base_url("bootstrap/css/bootstrap.min.css")?>">
   </head>
   <body style="background-color: #DFFFD8;">
+
+    <?php if($mensaje==1): ?>
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            Registro exitoso, inicie su sesion
+        </div> 
+    <?php elseif($mensaje==3):?>
+      <div class="alert alert-danger alert-dismissible">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            Inicio de sesion denegado verifique sus credenciales de acceso
+        </div> 
+    <?php endif; ?>
+
     <!--Para hacer el cuadro se necesitan 2 divs-->
     <div class="d-flex justify-content-center align-items-center vh-100">
       <div class="bg-white p-5 rounded-5 text-secondary shadow" style="width: 25rem">
