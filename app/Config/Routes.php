@@ -23,7 +23,25 @@ $routes->post("/Login/Process","UsuarioController::Login");
 $routes->get("/MisNotas/CrearNota","NotasController::CrearNota");
 $routes->get("/MisNotas","NotasController::Notas");
 //Process
-//Falta crear dos process para eliminar nota y eliminar todas las notas pero aun no esta lista la pagina principal 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //Api usuarios           /*any=lo que sea que se le pase       /1/2 hace referencia a los parametros que parametro es cual dentro del uri*/
 $routes->get("/ApiLogin/(:any)/(:any)","UsuarioController::Login/$1/$2");               //Login                                                                        

@@ -21,9 +21,29 @@ class NotasController extends ResourceController
      //vistas
      public function Notas()
      {
-        return view('Notas');
+        return view("Notas");
      }
-    public function crearnota()
+
+     public function CrearNota()
+     {
+        return view("CrearNotas");
+     }
+     //process
+
+
+
+
+
+
+
+
+
+
+
+
+
+     //Api
+    public function  ApiCrearNota()
     {
         $NotasModel= new NotasModel();
         $ContenidoNota=[
