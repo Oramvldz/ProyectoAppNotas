@@ -9,7 +9,7 @@ use CodeIgniter\HTTP\Message;
 class UsuarioController extends ResourceController
 {
         //Retorna vistas Usuarios
-        public function InicioSesion()
+        public function VistaLogin()
         {
             return view("login");
         }
@@ -19,17 +19,17 @@ class UsuarioController extends ResourceController
             return view("registro");
         }
     
-        public function perfil()
+        public function VistaPerfil()
         {
             return view("perfil");
         }
     
-        public function cambiar_email()
+        public function VistaCambiarEmail()
         {
             return view("CambiarEmail");
         }
     
-        public function cambiar_contraseña()
+        public function VistaCambiarContraseña()
         {
             return view("CambiarContraseña");
         }
@@ -38,25 +38,53 @@ class UsuarioController extends ResourceController
         public function RegistroUsuario()
         {
             $UsuarioModel=new UsuarioModel();
-            //SELECT PARA REGISTRAR USUARIOS
-            try{
-                $UsuarioModel->save([
-                    'Email'=>$this->request->getVar('Email'),
-                    'Pass'=>$this->request->getVar('Contraseña'),
-                    'Nombres'=>$this->request->getVar('Nombres'),
-                    'Apellidos'=>$this->request->getVar('Apellidos')
-                ]);
-                return redirect()->to(base_url('/Login'));
-            }catch(\Exception $e){
-                return $e->getMessage();
+            $Email=$this->request->getVar('Email');
+            $UsuarioEncontrado=$UsuarioModel->getWhere(['Email'=>$Email])->getResult();
+
+            if(count($UsuarioEncontrado)>0)
+            {
+                return $this->respond($UsuarioEncontrado);
             }
-        }        
+            else
+            {
+                try{
+                    $UsuarioModel->save([
+                        'Email'=>$this->request->getVar('Email'),
+                        'Pass'=>$this->request->getVar('Contraseña'),
+                        'Nombres'=>$this->request->getVar('Nombres'),
+                        'Apellidos'=>$this->request->getVar('Apellidos')
+                    ]);
+                    return redirect()->to(base_url('/Login'));
+                }catch(\Exception $e){
+                    return $e->getMessage();
+                }
+            }
+        }       
+        public function Login()
+        {
+            $UsuarioModel= new UsuarioModel();
+            $Email=$this->request->getVar('Email');
+            $Pass=$this->request->getVar('Contraseña');
+            $UsuarioEncontrado=$UsuarioModel->getWhere(['Email'=>$Email,'Pass'=>$Pass])->getResult();    
+            if(count($UsuarioEncontrado)>0)
+            {
+                return redirect()->to(base_url('/MisNotas'));
+            }
+            else
+            {
+                return redirect()->to(base_url('/Login'));
+            }
+        }
+        
+
+
+
     /**
      * Return an array of resource objects, themselves in array format
      *
      * @return mixed
      */
-    //login
+    //API
     public function index()
     {
         $UsuarioModel= new UsuarioModel();
@@ -68,7 +96,7 @@ class UsuarioController extends ResourceController
      *
      * @return mixed
      */
-    public function Login($Email = null, $Pass=null)
+    public function ApiLogin($Email = null, $Pass=null)
     {
         $UsuarioModel=new UsuarioModel();
         $UsuarioEncontrado=$UsuarioModel->getWhere(['Email'=>$Email,'Pass'=>$Pass])->getResult();    
@@ -82,7 +110,7 @@ class UsuarioController extends ResourceController
         }
     }
 
-    public function SelectPorEmail($Email= null)
+    public function ApiSelectPorEmail($Email= null)
     {
         
         $UsuarioModel=new UsuarioModel();
@@ -112,7 +140,7 @@ class UsuarioController extends ResourceController
      *
      * @return mixed
      */
-    public function Registro()
+    public function ApiRegistro()
     {
         //REGISTRO
         $UsuarioModel= new UsuarioModel();
@@ -151,7 +179,7 @@ class UsuarioController extends ResourceController
      *
      * @return mixed
      */
-    public function updateEmail($id = null)
+    public function ApiupdateEmail($id = null)
     {
         $UsuarioModel=new UsuarioModel();
         
@@ -175,7 +203,7 @@ class UsuarioController extends ResourceController
      *
      * @return mixed
      */
-    public function updatePass($id = null)
+    public function ApiupdatePass($id = null)
     {
         $UsuarioModel=new UsuarioModel();
         

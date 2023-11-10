@@ -18,7 +18,7 @@
 
           <div class="text-center fs-1 fw-bold">Login</div>
           <!--FORMULARIO-->
-          <form action="<?=base_url("/Login/Procesar")?>" method="post">
+          <form action="<?=base_url("/Login/Process")?>" method="post">
 
             <!--Inpout Group (para agg imagen)-->
             <div class="input-group mt-3">

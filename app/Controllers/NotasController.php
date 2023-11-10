@@ -17,6 +17,12 @@ class NotasController extends ResourceController
      * @return mixed
      */
 
+
+     //vistas
+     public function Notas()
+     {
+        return view('Notas');
+     }
     public function crearnota()
     {
         $NotasModel= new NotasModel();

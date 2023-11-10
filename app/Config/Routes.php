@@ -11,14 +11,14 @@ use CodeIgniter\Router\RouteCollection;
 $routes->resource('/usuarios',['controller'=>'UsuarioController']);
 
 //Devuelve vistas Usuario
-$routes->get("/Login","UsuarioController::InicioSesion");
+$routes->get("/Login","UsuarioController::VistaLogin");
 $routes->get("/Registro","UsuarioController::VistaRegistro");
-$routes->get("/Perfil","UsuarioController::perfil");
-$routes->get("/Perfil/Cambiar_Email","UsuarioController::cambiar_email");
-$routes->get("/Perfil/Cambiar_Contraseña","UsuarioController::cambiar_contraseña");
-$routes->get("/PaginaPrincipal","UsuarioController::PaginaPrincipal");
+$routes->get("/Perfil","UsuarioController::VistaPerfil");
+$routes->get("/Perfil/Cambiar_Email","UsuarioController::VistaCambiarEmail");
+$routes->get("/Perfil/Cambiar_Contraseña","UsuarioController::VistaCambiarContraseña");
 //Process
 $routes->post("/Registro/Process","UsuarioController::RegistroUsuario");
+$routes->post("/Login/Process","UsuarioController::Login");
 //Devuelve vistas Notas
 $routes->get("/MisNotas/CrearNota","NotasController::CrearNota");
 $routes->get("/MisNotas","NotasController::Notas");
