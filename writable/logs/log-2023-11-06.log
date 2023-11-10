@@ -1,0 +1,27 @@
+CRITICAL - 2023-11-06 15:25:36 --> Undefined variable $Routes
+in APPPATH\Config\Routes.php on line 28.
+ 1 APPPATH\Config\Routes.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Routes', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Config\\Routes.php', 28)
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-11-06 15:26:22 --> Undefined variable $Routes
+in APPPATH\Config\Routes.php on line 28.
+ 1 APPPATH\Config\Routes.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Routes', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Config\\Routes.php', 28)
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-11-06 15:26:22 --> Undefined variable $Routes
+in APPPATH\Config\Routes.php on line 28.
+ 1 APPPATH\Config\Routes.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Routes', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Config\\Routes.php', 28)
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')

@@ -1,0 +1,127 @@
+ERROR - 2023-11-05 00:45:54 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\ProyectoAppNotas\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAppNotas\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'AppNotas', 3306, '', 0)
+#1 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ProyectoAppNotas\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ProyectoAppNotas\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ProyectoAppNotas\app\Controllers\UsuarioController.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(942): App\Controllers\UsuarioController->index()
+#8 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#9 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ProyectoAppNotas\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ProyectoAppNotas\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\ProyectoAppNotas\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ProyectoAppNotas\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ProyectoAppNotas\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\ProyectoAppNotas\app\Controllers\UsuarioController.php(18): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(942): App\Controllers\UsuarioController->index()
+#7 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#8 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ProyectoAppNotas\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ProyectoAppNotas\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-11-05 00:45:54 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\UsuarioController.php(18): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-11-05 00:58:17 --> Declaration of App\Controllers\UsuarioController::show() must be compatible with CodeIgniter\RESTful\ResourceController::show($id = null)
+in APPPATH\Controllers\UsuarioController.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-05 00:58:27 --> Declaration of App\Controllers\UsuarioController::show() must be compatible with CodeIgniter\RESTful\ResourceController::show($id = null)
+in APPPATH\Controllers\UsuarioController.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-05 00:59:48 --> Declaration of App\Controllers\UsuarioController::show() must be compatible with CodeIgniter\RESTful\ResourceController::show($id = null)
+in APPPATH\Controllers\UsuarioController.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-05 01:01:11 --> Declaration of App\Controllers\UsuarioController::show() must be compatible with CodeIgniter\RESTful\ResourceController::show($id = null)
+in APPPATH\Controllers\UsuarioController.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-05 01:01:15 --> Declaration of App\Controllers\UsuarioController::show() must be compatible with CodeIgniter\RESTful\ResourceController::show($id = null)
+in APPPATH\Controllers\UsuarioController.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-05 01:01:46 --> Declaration of App\Controllers\UsuarioController::show() must be compatible with CodeIgniter\RESTful\ResourceController::show($id = null)
+in APPPATH\Controllers\UsuarioController.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-05 01:01:48 --> Declaration of App\Controllers\UsuarioController::show() must be compatible with CodeIgniter\RESTful\ResourceController::show($id = null)
+in APPPATH\Controllers\UsuarioController.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-05 01:36:34 --> Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in C:\xampp\htdocs\ProyectoAppNotas\app\Config\Routes.php on line 19 and at least 2 expected
+in SYSTEMPATH\Router\RouteCollection.php on line 1016.
+ 1 APPPATH\Config\Routes.php(19): CodeIgniter\Router\RouteCollection->get('/PaginaPrincipalVistasController::PaginaPrincipal')
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-11-05 02:21:42 --> Undefined property: stdClass::$Pass
+in APPPATH\Controllers\UsuarioController.php on line 125.
+ 1 APPPATH\Controllers\UsuarioController.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Pass', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 125)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->updatePass('1')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-11-05 02:21:56 --> Undefined property: stdClass::$Pass
+in APPPATH\Controllers\UsuarioController.php on line 125.
+ 1 APPPATH\Controllers\UsuarioController.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Pass', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 125)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->updatePass('1')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-11-05 05:38:49 --> Undefined constant "App\Controllers\this"
+in APPPATH\Controllers\UsuarioController.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->SelectPorEmail('Orlando')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-11-05 05:54:28 --> Undefined variable $id
+in APPPATH\Controllers\UsuarioController.php on line 154.
+ 1 APPPATH\Controllers\UsuarioController.php(154): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 154)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->updatePass('1')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-11-05 22:18:45 --> Undefined property: stdClass::$Pass
+in APPPATH\Controllers\UsuarioController.php on line 141.
+ 1 APPPATH\Controllers\UsuarioController.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Pass', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 141)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->updatePass('2')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-11-05 22:27:51 --> Cannot use object of type App\Models\UsuarioModel as array
+in APPPATH\Controllers\UsuarioController.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->Login('ola', 'xcv')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-11-05 22:28:27 --> Call to a member function getWhere() on null
+in APPPATH\Controllers\UsuarioController.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->Login('ola', 'xcv')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
