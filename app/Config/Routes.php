@@ -21,7 +21,7 @@ $routes->post("/Registro/Process","UsuarioController::RegistroUsuario");
 $routes->post("/Login/Process","UsuarioController::Login");
 $routes->get("/CerrarSesion/Process","UsuarioController::SignOut");
 //Devuelve vistas Notas
-$routes->get("/MisNotas/CrearNota","NotasController::CrearNota");
+$routes->get("/MisNotas/CrearNota","NotasController::ApiCrearNota");
 $routes->get("/MisNotas","NotasController::Notas");
 //Process
 
@@ -52,9 +52,10 @@ $routes->get("/ApiSelectEmail/(:any)","UsuarioController::SelectPorEmail/$1");  
 $routes->put("/ApiActualizarPass/(:num)","UsuarioController::updatePass/$1");           //Actualizar contraseña
 //Api notas NotasController
 
-$routes->post("/MisNotas/CrearNota","NotasController::CrearNota");  //Crear nueva nota
+$routes->post("/MisNotas/CrearNota","NotasController::ApiCrearNota");  //Crear nueva nota
 $routes->get("/MisNotas/SeleccionarNotas/(:num)","NotasController::SeleccionarNotas/$1"); //Seleccionar notas
 $routes->delete("/MisNotas/EliminarNota/(:num)","NotasController::delete/$1");//Eliminar nota
+
 //No elimina todas las notas
 $routes->delete("/MisNotas/EliminarTodasNotas/(:num)","NotasController::EliminarMisNotas/$1"); //Eliminar todas las notas                                                                     
 $routes->put("/MisNotas/ModificarNota/(:num)","NotasController::ModificarNota/$1");  //Modificar notas                                                                      
