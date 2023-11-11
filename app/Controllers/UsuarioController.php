@@ -8,15 +8,19 @@ use CodeIgniter\HTTP\Message;
 
 class UsuarioController extends ResourceController
 {
+        public $session=null;
+
+        public function __construct()
+        {
+            helper('form');
+            $session=\Config\Services::session();
+        }
+
         //Retorna vistas Usuarios
         public function VistaLogin()
         {
-            //no funciona
-            if(!session()->Is_Logged)
-            {
-                $mensaje=session('mensaje');
-                return view("login",compact('mensaje'));
-            }
+            $mensaje=session('mensaje');
+            return view("login",compact('mensaje'));
         }
 
         public function VistaRegistro()
@@ -72,18 +76,19 @@ class UsuarioController extends ResourceController
             $UsuarioModel= new UsuarioModel();
             $Email=$this->request->getVar('Email');
             $Pass=$this->request->getVar('Contraseña');
-            $UsuarioEncontrado=$UsuarioModel->getWhere(['Email'=>$Email,'Pass'=>$Pass])->getResult();    
+            $UsuarioEncontrado=$UsuarioModel->getWhere(['Email'=>$Email,'Pass'=>$Pass])->getResultArray();   
             if(count($UsuarioEncontrado)>0)
-            {
+            {   
+                $Datos=[
+                    "Id"=>$UsuarioEncontrado[0]['Id']
+                ];
+                $this->session=session();
+                $this->session->set($Datos);
                 return redirect()->to(base_url('/MisNotas'));
-                //es como si no exisitiera session
-                session()->set([
-                    'Id_usuario'=>$UsuarioEncontrado['Id'],
-                    'Email'=>$UsuarioEncontrado['Email'],
-                    'Nombres'=>$UsuarioEncontrado['Nombres'],
-                    'Apellidos'=>$UsuarioEncontrado['Apellidos'],
-                    'Is_Logged'=>true
-                ]);
+                /*
+                $id=(int)$this->session->get('Id');
+                echo($id);
+                */
             }
             else
             {
@@ -93,8 +98,7 @@ class UsuarioController extends ResourceController
         
         public function SignOut()
         {
-            //session no funcional
-            session()->destroy();
+            $this->session->destroy();
             return redirect()->to(base_url('/Login'));
         }
 
