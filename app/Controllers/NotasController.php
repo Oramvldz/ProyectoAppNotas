@@ -2,165 +2,39 @@
 
 namespace App\Controllers;
 
-use CodeIgniter\RESTful\ResourceController;
-
+use App\Controllers\BaseController;
 use App\Models\NotasModel;
-use CodeIgniter\HTTP\Message;
 
-
-
-class NotasController extends ResourceController
+class NotasController extends BaseController
 {
-    /**
-     * 
-     *
-     * @return mixed
-     */
-
-
-     //vistas
-     public function Notas()
-     {
-         return view("Notas");
-     }
-
-     public function CrearNota()
-     {
-        return view("CrearNotas");
-     }
-     //process
-
-
-
-
-
-
-
-
-
-
-
-
-
-     //Api
-    public function  ApiCrearNota()
+    //vistas
+    public function Notas()
     {
-        $NotasModel= new NotasModel();
-        $ContenidoNota=[
-            'Id_usuario'=> $this->request->getVar('Id_usuario'),
-            'Titulo'=> $this->request->getVar('Titulo'),
-            'Contenido'=> $this->request->getVar('Contenido')
-        ];
+        $this->session=session();
 
-        $NotasModel->insert($ContenidoNota);
-        //try catch falta
-        $response=[
-            'status' => 201,
-            'error' => null,
-            'messages' =>[
-                'success' => 'Nota Guardada Correctamente'
-            ]
-        ];
-
-        return $this->respond($response);
-    }
-
-    /**
-     * Return the properties of a resource object
-     *
-     * @return mixed
-     */
-    public function SeleccionarNotas($Idusuario)
-    {
-        $NotasModel=new NotasModel();
-        $Data['Notas']=$NotasModel->getwhere(['Id_usuario'=>$Idusuario])->getResult();
-        return $this->respond($Data['Notas']);
-    }
-
-    /**
-     * Return a new resource object, with default properties
-     *
-     * @return mixed
-     */
-    public function new()
-    {
-        //
-    }
-
-    /**
-     * Create a new resource object, from "posted" parameters
-     *
-     * @return mixed
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Return the editable properties of a resource object
-     *
-     * @return mixed
-     */
-    public function ModificarNota($Id = null)
-    {
-        $NotasModel=new NotasModel();
+        if($this->session->get('Is_Logged'))
+        {
+            return view("Notas");
+        }else
+        {
+            return redirect()->to(base_url('/Login'));
+        }
         
-        $DatosSolicitud=$this->request->getJSON();
-        $datos=[
-            'Titulo'=>$DatosSolicitud->Titulo,
-            'Contenido'=>$DatosSolicitud->Contenido
-        ];
-
-        $NotasModel->update($Id,$DatosSolicitud);
-        //try catch falta
-        $respuesta=[
-            'estatus'=>200,
-            'error'=>null,
-            'mensaje'=>['Satisfactorio'=>'Recurso actualizado correctamente']
-        ];
-        return $this->respond($respuesta);
     }
 
-    /**
-     * Add or update a model resource, from "posted" properties
-     *
-     * @return mixed
-     */
-    public function EliminarMisNotas($Id_Usuario = null)
+    public function CrearNota()
     {
-        //No elimina el conjunto de notas del usuario
-
-        $NotasModel= new NotasModel();
-        $NotasModel->delete(['Id_usuario','like',$Id_Usuario]);
-
-        $respuesta=[
-            'estatus'=>200,
-            'error'=>null,
-            'mensaje'=>['Satisfactorio'=>'Recurso eliminado correctamente']
-        ];
-
-        return $this->respond($respuesta);
+        $this->session=session();
+        
+        if($this->session->get('Is_Logged'))
+        {
+            return view("CrearNotas");
+        }else
+        {
+            return redirect()->to(base_url('/Login'));
+        }
+        
     }
+    //process
 
-    /**
-     * Delete the designated resource object from the model
-     *
-     * @return mixed
-     */
-    public function delete($Id = null)
-    {
-        $NotasModel= new NotasModel();
-        $NotasModel->delete(['Id'=>$Id]);
-
-        $respuesta=[
-            'estatus'=>200,
-            'error'=>null,
-            'mensaje'=>['Satisfactorio'=>'Recurso eliminado correctamente']
-        ];
-
-        return $this->respond($respuesta);
-    }
-
-    //prueba de sincronizacion
 }
