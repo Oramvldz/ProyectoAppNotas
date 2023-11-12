@@ -24,7 +24,7 @@ $routes->get("/CerrarSesion/Process","UsuarioController::SignOut");
 $routes->get("/MisNotas/CrearNota","NotasController::CrearNota");
 $routes->get("/MisNotas","NotasController::Notas");
 //Process
-
+//crear ruta process y el metodo en notas controller
 
 
 

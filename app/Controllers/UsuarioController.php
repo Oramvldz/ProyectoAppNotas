@@ -29,11 +29,18 @@ class UsuarioController extends BaseController
 
     public function VistaPerfil()
     {
+        $UsuarioModel=new UsuarioModel();
         $this->session=session();
+        $Id=$this->session->get('Id');
+
+        $Usuario=$UsuarioModel->find($Id);
+        //Es otra forma de obtener el resultado en matriz Usuario[0]['Nombres']
+        // o con un foreach($usuario as $usuario)
+        //getWhere(['Id'=>$Id])->getResultArray();
         
         if($this->session->get('Is_Logged'))
         {
-            return view("perfil");
+            return view("perfil", compact('Usuario'));
         }else
         {
             return redirect()->to(base_url('/Login'));

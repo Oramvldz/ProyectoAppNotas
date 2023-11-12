@@ -13,23 +13,19 @@
 
             <div class="input-group">
                 <span class="input-group-text bg-white"><img src="iconos/username.png" style="height: 1rem;"></span>
-                <input type="text" class="form-control" name="Nombres" value="Orlando Ramon" disabled>
+                <input type="text" class="form-control" name="Nombres" value="<?php echo ($Usuario['Nombres']);?>" disabled>
             </div>
 
             <div class="input-group">
                 <span class="input-group-text bg-white mt-2"><img src="iconos/username.png" style="height: 1rem;"></span>
-                <input type="text" class="form-control mt-2" name="Apellidos" value="Valdez" disabled>
+                <input type="text" class="form-control mt-2" name="Apellidos" value="<?php echo ($Usuario['Apellidos']);?>" disabled>
             </div>
             
             <div class="input-group">
                 <span class="input-group-text bg-white mt-2"><img src="iconos/username.png" style="height: 1rem;"></span>
-                <input type="email" name="Nuevo_Email" placeholder="Nuevo email" class=" form-control mt-2" disabled>
+                <input type="email" name="Email" value="<?php echo($Usuario['Email'] )?>" class=" form-control mt-2" disabled>
             </div>
 
-            <div class="input-group">
-                <span class="input-group-text bg-white mt-2"><img src="iconos/username.png" style="height: 1rem;"></span>
-                <input type="password" class="form-control mt-2" name="password" value="password" disabled>
-            </div>
 
             <div class=" d-flex justify-content-center">
                 <a href="<?= base_url("/Perfil/Cambiar_Email")?>"class="btn btn-primary mt-2">Cambiar Email</a>
