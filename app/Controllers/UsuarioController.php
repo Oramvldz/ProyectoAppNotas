@@ -23,8 +23,16 @@ class UsuarioController extends BaseController
 
     public function VistaRegistro()
     {
-        $mensaje=session('mensaje');
-        return view("registro",compact('mensaje'));
+        $this->session=session();
+        
+        if($this->session->get('Is_Logged'))
+        {
+            return redirect()->to(base_url('/MisNotas'));
+        }else
+        {
+            $mensaje=session('mensaje');
+            return view("registro",compact('mensaje'));
+        }
     }
 
     public function VistaPerfil()
