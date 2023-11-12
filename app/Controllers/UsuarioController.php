@@ -48,7 +48,8 @@ class UsuarioController extends BaseController
         
         if($this->session->get('Is_Logged'))
         {
-            return view("perfil", compact('Usuario'));
+            $mensaje=session('mensaje');
+            return view("perfil", compact('Usuario','mensaje'));
         }else
         {
             return redirect()->to(base_url('/Login'));
@@ -121,6 +122,7 @@ class UsuarioController extends BaseController
         {   
             $Datos=[
                 "Id"=>$UsuarioEncontrado[0]['Id'],
+                "Email"=>$UsuarioEncontrado[0]['Email'],
                 "Is_Logged"=>true
             ];
             $this->session=session();
@@ -134,6 +136,45 @@ class UsuarioController extends BaseController
         else
         {
             return redirect()->to(base_url('/Login'))->with('mensaje','3');
+        }
+    }
+
+    public function UpdateEmail()
+    {
+        $UsuarioModel=new UsuarioModel();
+        $this->session=session();
+        
+        $EmailAntiguo= $this->request->getVar('Email_Antiguo');
+        $Contraseña= $this->request->getVar('Contraseña');
+        //Email a actualizar
+        $NuevoEmail= $this->request->getVar('Nuevo_Email');                                          //me retorna solo una fila
+        $UsuarioEncontrado=$UsuarioModel->getWhere(['Email'=>$EmailAntiguo,'Pass'=>$Contraseña])->getRow();
+        
+        if(isset($UsuarioEncontrado))
+        {
+            $EmailEncontrado=$UsuarioEncontrado->Email;
+            $Id=$UsuarioEncontrado->Id;
+        }
+        
+        //si ya metio la contraseña quiere decir que ya sabe la contraseña y si es su cuenta
+        //Falta verificar que el email no sea igual a otro dentro del sistema
+        if(isset($UsuarioEncontrado) && $EmailEncontrado==$this->session->get('Email'))
+        {   
+            $data=[
+                'Email'=>$NuevoEmail
+            ];
+            $this->session->remove('Id','Email','Is_Logged');
+            $Datossesion=[
+                "Id"=>$UsuarioEncontrado->Id,
+                "Email"=>$NuevoEmail,
+                "Is_Logged"=>true
+            ];
+            $this->session->set($Datossesion);
+            //el segundo parametro en este metodo recibe array por eso hago un array arriba
+            $UsuarioModel->update($Id,$data);
+            return redirect()->to(base_url('/Perfil'))->with('mensaje','4');;
+        }else{
+            return redirect()->to(base_url('/Perfil'))->with('mensaje','5');
         }
     }
     

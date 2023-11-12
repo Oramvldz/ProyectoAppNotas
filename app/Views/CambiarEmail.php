@@ -17,7 +17,7 @@
                 <!--Inpout Group (para agg imagen)-->
                 <div class="input-group mt-3">
                   <span class="input-group-text bg-white"><img src="<?= base_url("/iconos/username.png")?>" style="height: 1rem;"></span>
-                  <input class="form-control bg-white" type="email" placeholder="Email" name="Email" maxlength="100" required/>
+                  <input class="form-control bg-white" type="email" placeholder="Email" name="Email_Antiguo" maxlength="100" required/>
                 </div>
     
                 <!--Inpout Group (para agg imagen)-->

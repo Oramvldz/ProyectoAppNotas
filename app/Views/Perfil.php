@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="<?=base_url("bootstrap/css/bootstrap.min.css")?>">
     <title>Perfil</title>
 </head>
+
+<?php if($mensaje==4): ?>
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            Actualizacion realizada con exito
+        </div> 
+    <?php elseif($mensaje==5):?>
+      <div class="alert alert-danger alert-dismissible">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            Actualizacion no realizada verifique sus credenciales
+        </div> 
+    <?php endif; ?>
+
 <body style="background-color: #DFFFD8;">
     <div class="d-flex justify-content-center align-items-center vh-100">
         <div class="bg-white p-5 rounded-5 text-secondary shadow">
