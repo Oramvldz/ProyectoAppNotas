@@ -27,7 +27,7 @@ class UsuarioController extends BaseController
         
         if($this->session->get('Is_Logged'))
         {
-            return redirect()->to(base_url('/Login'));
+            return redirect()->to(base_url('/MisNotas'));
         }else
         {
             $mensaje=session('mensaje');
