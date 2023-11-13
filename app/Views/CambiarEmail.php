@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="<?=base_url("bootstrap/css/bootstrap.min.css")?>">
     <title>Cambiar Email</title>
 </head>
-<body style="background-color: #DFFFD8;">
+<body style="background-color: #E1F2FB;">
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
   <div class="container-fluid">

@@ -7,7 +7,7 @@
     <title>Registro</title>
     <link rel="stylesheet" href="<?=base_url("bootstrap/css/bootstrap.min.css")?>">
 </head>
-<body style="background-color: #DFFFD8;">
+<body style="background-color: #E1F2FB;">
     <!--Para hacer el cuadro se necesitan 2 divs-->
 
     <?php if($mensaje==2):?>

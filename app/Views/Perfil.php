@@ -54,7 +54,7 @@
         </div> 
     <?php endif; ?>
 
-<body style="background-color: #DFFFD8;">
+<body style="background-color: #E1F2FB;">
     <div class="d-flex justify-content-center align-items-center vh-100">
         <div class="bg-white p-5 rounded-5 text-secondary shadow">
 

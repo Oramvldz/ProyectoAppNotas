@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="<?=base_url("bootstrap/css/bootstrap.min.css")?>">
     <title>Mis Notas</title>
 </head>
-<body style="background-color: #DFFFD8;">
+<body style="background-color: #E1F2FB;">
     <!--Barra De Navegacion-->
 <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
   <div class="container-fluid">
