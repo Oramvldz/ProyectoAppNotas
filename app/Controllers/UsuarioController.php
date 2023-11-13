@@ -149,7 +149,7 @@ class UsuarioController extends BaseController
         //Email a actualizar
         $NuevoEmail= $this->request->getVar('Nuevo_Email');                                          //me retorna solo una fila
         $UsuarioEncontrado=$UsuarioModel->getWhere(['Email'=>$EmailAntiguo,'Pass'=>$Contraseña])->getRow();
-        
+        $UsuarioRepetido=$UsuarioModel->getWhere(['Email'=>$NuevoEmail])->getRow();
         if(isset($UsuarioEncontrado))
         {
             $EmailEncontrado=$UsuarioEncontrado->Email;
@@ -158,7 +158,7 @@ class UsuarioController extends BaseController
         
         //si ya metio la contraseña quiere decir que ya sabe la contraseña y si es su cuenta
         //Falta verificar que el email no sea igual a otro dentro del sistema
-        if(isset($UsuarioEncontrado) && $EmailEncontrado==$this->session->get('Email'))
+        if(isset($UsuarioEncontrado) && $EmailEncontrado==$this->session->get('Email') && !isset($UsuarioRepetido))
         {   
             $data=[
                 'Email'=>$NuevoEmail
@@ -175,6 +175,36 @@ class UsuarioController extends BaseController
             return redirect()->to(base_url('/Perfil'))->with('mensaje','4');;
         }else{
             return redirect()->to(base_url('/Perfil'))->with('mensaje','5');
+        }
+    }
+
+    public function UpdatePass()
+    {
+        $UsuarioModel=new UsuarioModel();
+        $this->session=session();
+        $EmailAntiguo= $this->request->getVar('Email_Antiguo');
+        $Contraseña= $this->request->getVar('Contraseña');
+        //Email a actualizar
+        $NuevaContraseña= $this->request->getVar('NuevaContraseña');                                          //me retorna solo una fila
+        $UsuarioEncontrado=$UsuarioModel->getWhere(['Email'=>$EmailAntiguo,'Pass'=>$Contraseña])->getRow();
+        if(isset($UsuarioEncontrado))
+        {
+            $EmailEncontrado=$UsuarioEncontrado->Email;
+            $Id=$UsuarioEncontrado->Id;
+        }
+        
+        //si ya metio la contraseña quiere decir que ya sabe la contraseña y si es su cuenta
+        //checo si que usuario encontrado no este vacio y que la session sea igual al email que quiero actualizar
+        if(isset($UsuarioEncontrado) && $EmailEncontrado==$this->session->get('Email'))
+        {   
+            $data=[
+                'Pass'=>$NuevaContraseña
+            ];
+            //el segundo parametro en este metodo recibe array por eso hago un array arriba
+            $UsuarioModel->update($Id,$data);
+            return redirect()->to(base_url('/Perfil'))->with('mensaje','6');;
+        }else{
+            return redirect()->to(base_url('/Perfil'))->with('mensaje','7');
         }
     }
     

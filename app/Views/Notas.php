@@ -39,7 +39,7 @@
             Nota agregada con exito
         </div>
         <?php endif; ?>
-
+<!--aqui va div de mis notas-->
 
 <div class="d-flex fixed-bottom justify-content-end">
     <a href="<?=base_url("/MisNotas/CrearNota")?>">
