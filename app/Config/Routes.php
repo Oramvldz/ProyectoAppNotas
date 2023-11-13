@@ -22,10 +22,11 @@ $routes->post("/Login/Process","UsuarioController::Login");
 $routes->get("/CerrarSesion/Process","UsuarioController::SignOut");
 $routes->post("/Perfil/Cambiar_Email/Procesar","UsuarioController::UpdateEmail");
 //Devuelve vistas Notas
-$routes->get("/MisNotas/CrearNota","NotasController::CrearNota");
+$routes->get("/MisNotas/CrearNota","NotasController::VistaCrearNota");
 $routes->get("/MisNotas","NotasController::Notas");
 //Process
 //crear ruta process y el metodo en notas controller
+$routes->post("/MisNotas/CrearNota/Process","NotasController::CrearNota");
 
 
 

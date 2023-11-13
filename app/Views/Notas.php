@@ -33,6 +33,14 @@
   </div>
 </nav>
 
+<?php if($mensaje==6): ?>
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            Nota agregada con exito
+        </div>
+        <?php endif; ?>
+
+
 <div class="d-flex fixed-bottom justify-content-end">
     <a href="<?=base_url("/MisNotas/CrearNota")?>">
     <button class="rounded-circle btn btn-danger mb-4 me-4 shadow-sm"style="width:70px;height:70px"><h1>+</h1></button>

@@ -9,7 +9,7 @@
 <body style="background-color: #DFFFD8;">
 
     <div class="container mt-3">
-        <form action="<?= base_url("/Notas/CrearNota/Procesar")?>" method="post">
+        <form action="<?= base_url("/MisNotas/CrearNota/Process")?>" method="post">
             
             <div class="input-group">
                 <span class="input-group-text bg-white">Titulo</span>
