@@ -37,6 +37,21 @@ class NotasController extends BaseController
         
     }
 
+
+    public function VistaVerNota()
+    {
+        $this->session=session();
+
+        if($this->session->get('Is_Logged'))
+        {
+            return view("VerNota");
+        }else
+        {
+            return redirect()->to(base_url('/Login'));
+        }
+        
+    }
+
     public function VistaCrearNota()
     {
         $this->session=session();
