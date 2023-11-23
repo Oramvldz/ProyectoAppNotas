@@ -1,3 +1,382 @@
+<<<<<<< HEAD
+INFO - 2023-11-12 01:50:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 01:50:58 --> syntax error, unexpected identifier "compact", expecting ")"
+in APPPATH\Controllers\UsuarioController.php on line 44.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UsuarioController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UsuarioController')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\UsuarioController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 01:50:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 01:51:00 --> syntax error, unexpected identifier "compact", expecting ")"
+in APPPATH\Controllers\UsuarioController.php on line 44.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UsuarioController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UsuarioController')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\UsuarioController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 01:56:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 01:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 01:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 01:57:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 01:57:15 --> Call to a member function get() on null
+in APPPATH\Controllers\UsuarioController.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->VistaPerfil()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 01:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 01:58:55 --> Call to a member function get() on null
+in APPPATH\Controllers\UsuarioController.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->VistaPerfil()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 01:58:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 01:58:56 --> Call to a member function get() on null
+in APPPATH\Controllers\UsuarioController.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->VistaPerfil()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 01:58:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 01:58:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 01:59:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 01:59:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 01:59:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 01:59:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 01:59:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 01:59:14 --> Call to a member function get() on null
+in APPPATH\Controllers\UsuarioController.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->VistaPerfil()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 02:05:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:06:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:06:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:06:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:06:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:06:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:06:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:06:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:06:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:06:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 02:06:33 --> Call to a member function get() on null
+in APPPATH\Controllers\UsuarioController.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->VistaPerfil()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 02:06:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:15:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:15:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:19:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 02:19:51 --> Undefined constant "Usuario"
+in APPPATH\Views\Perfil.php on line 16.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('perfil', [], true)
+ 4 APPPATH\Controllers\UsuarioController.php(42): view('perfil', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->VistaPerfil()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 02:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 02:20:19 --> Undefined array key 0
+in APPPATH\Views\Perfil.php on line 16.
+ 1 APPPATH\Views\Perfil.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Views\\Perfil.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Views\\Perfil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('perfil', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(42): view('perfil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->VistaPerfil()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 02:21:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 02:21:14 --> Undefined array key "Nombres"
+in APPPATH\Views\Perfil.php on line 16.
+ 1 APPPATH\Views\Perfil.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Nombres"', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Views\\Perfil.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Views\\Perfil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('perfil', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(42): view('perfil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->VistaPerfil()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 02:24:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 02:24:54 --> Undefined array key 0
+in APPPATH\Controllers\UsuarioController.php on line 38.
+ 1 APPPATH\Controllers\UsuarioController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->VistaPerfil()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 02:24:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 02:24:55 --> Undefined array key 0
+in APPPATH\Controllers\UsuarioController.php on line 38.
+ 1 APPPATH\Controllers\UsuarioController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->VistaPerfil()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 02:25:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 02:25:14 --> Undefined array key "Nombres"
+in APPPATH\Controllers\UsuarioController.php on line 38.
+ 1 APPPATH\Controllers\UsuarioController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Nombres"', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->VistaPerfil()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 02:28:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 02:28:47 --> Undefined array key 0
+in APPPATH\Controllers\UsuarioController.php on line 38.
+ 1 APPPATH\Controllers\UsuarioController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->VistaPerfil()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 02:28:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 02:28:48 --> Undefined array key 0
+in APPPATH\Controllers\UsuarioController.php on line 38.
+ 1 APPPATH\Controllers\UsuarioController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->VistaPerfil()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 02:31:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 02:31:06 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+in APPPATH\Controllers\UsuarioController.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->VistaPerfil()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 02:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 02:31:35 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+in APPPATH\Controllers\UsuarioController.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->VistaPerfil()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 02:31:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 02:31:37 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+in APPPATH\Controllers\UsuarioController.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->VistaPerfil()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 02:31:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 02:31:40 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+in APPPATH\Controllers\UsuarioController.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->VistaPerfil()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 02:33:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 02:33:25 --> Cannot use object of type mysqli as array
+in APPPATH\Controllers\UsuarioController.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->VistaPerfil()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 02:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 02:34:11 --> Object of type mysqli is not callable
+in APPPATH\Controllers\UsuarioController.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->VistaPerfil()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 02:35:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 02:35:35 --> Array callback must have exactly two elements
+in APPPATH\Controllers\UsuarioController.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->VistaPerfil()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 02:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 02:36:16 --> Undefined array key 0
+in APPPATH\Controllers\UsuarioController.php on line 39.
+ 1 APPPATH\Controllers\UsuarioController.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 39)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->VistaPerfil()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 02:36:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 02:36:29 --> Undefined variable $Nombres
+in APPPATH\Views\Perfil.php on line 16.
+ 1 APPPATH\Views\Perfil.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Nombres', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Views\\Perfil.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Views\\Perfil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('perfil', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(49): view('perfil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->VistaPerfil()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 02:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 02:37:49 --> Undefined array key "Nombres"
+in APPPATH\Views\Perfil.php on line 16.
+ 1 APPPATH\Views\Perfil.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Nombres"', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Views\\Perfil.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Views\\Perfil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('perfil', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(44): view('perfil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->VistaPerfil()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 02:38:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:40:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:41:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 02:41:32 --> Undefined array key "Nombres"
+in APPPATH\Views\Perfil.php on line 16.
+ 1 APPPATH\Views\Perfil.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Nombres"', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Views\\Perfil.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Views\\Perfil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('perfil', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(49): view('perfil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->VistaPerfil()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 02:42:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:42:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:42:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:42:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:42:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:43:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:43:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:44:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:44:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:44:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:44:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:44:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:44:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:44:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:44:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:50:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:50:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 02:50:17 --> Call to a member function get() on null
+in APPPATH\Controllers\UsuarioController.php on line 34.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->VistaPerfil()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 02:50:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 02:50:40 --> Trying to access array offset on value of type null
+in APPPATH\Views\Perfil.php on line 16.
+ 1 APPPATH\Views\Perfil.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Views\\Perfil.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Views\\Perfil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('perfil', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(49): view('perfil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->VistaPerfil()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 02:51:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 02:51:17 --> Trying to access array offset on value of type null
+in APPPATH\Views\Perfil.php on line 16.
+ 1 APPPATH\Views\Perfil.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Views\\Perfil.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Views\\Perfil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('perfil', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(49): view('perfil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->VistaPerfil()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 02:51:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 02:51:56 --> Trying to access array offset on value of type null
+in APPPATH\Views\Perfil.php on line 16.
+ 1 APPPATH\Views\Perfil.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Views\\Perfil.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Views\\Perfil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('perfil', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(49): view('perfil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->VistaPerfil()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 02:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 02:52:23 --> Trying to access array offset on value of type null
+in APPPATH\Views\Perfil.php on line 16.
+ 1 APPPATH\Views\Perfil.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Views\\Perfil.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Views\\Perfil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('perfil', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(49): view('perfil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->VistaPerfil()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 02:54:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:56:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:56:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:56:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:56:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:57:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:57:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:57:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:57:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:57:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:59:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:59:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:59:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:59:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:59:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:59:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:59:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:59:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 02:59:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 03:01:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 03:01:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 03:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 03:06:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+=======
 INFO - 2023-11-12 00:24:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-11-12 00:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-11-12 00:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
@@ -56,6 +435,7 @@ INFO - 2023-11-12 01:16:46 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-11-12 01:16:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-11-12 01:16:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-11-12 01:16:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+<<<<<<< HEAD
 INFO - 2023-11-12 01:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-11-12 01:33:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-11-12 01:33:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
@@ -67,3 +447,795 @@ INFO - 2023-11-12 01:33:18 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-11-12 01:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-11-12 01:34:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-11-12 01:35:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+=======
+>>>>>>> 73866080acdd808972d065ef45a2d79fc1b4d0f4
+INFO - 2023-11-12 03:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 03:37:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 03:37:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 03:37:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 18:11:48 --> Undefined constant "routes"
+in APPPATH\Config\Routes.php on line 23.
+ 1 SYSTEMPATH\Router\RouteCollection.php(344): require()
+ 2 SYSTEMPATH\CLI\Console.php(39): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+INFO - 2023-11-12 18:12:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:12:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-12 18:12:42 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\ProyectoAppNotas\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAppNotas\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'AppNotas', 3306, '', 0)
+#1 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseBuilder.php(1748): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ProyectoAppNotas\system\Model.php(871): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\htdocs\ProyectoAppNotas\app\Controllers\UsuarioController.php(119): CodeIgniter\Model->__call('getWhere', Array)
+#6 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(942): App\Controllers\UsuarioController->Login()
+#7 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#8 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ProyectoAppNotas\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ProyectoAppNotas\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\ProyectoAppNotas\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseBuilder.php(1748): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ProyectoAppNotas\system\Model.php(871): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#4 C:\xampp\htdocs\ProyectoAppNotas\app\Controllers\UsuarioController.php(119): CodeIgniter\Model->__call('getWhere', Array)
+#5 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(942): App\Controllers\UsuarioController->Login()
+#6 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#7 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProyectoAppNotas\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ProyectoAppNotas\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-11-12 18:12:42 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1748): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `Email` = :Email:
+AND `Pass` = :Pass:', [...], false)
+ 3 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 4 APPPATH\Controllers\UsuarioController.php(119): CodeIgniter\Model->__call('getWhere', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->Login()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 18:12:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:12:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:12:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:12:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:26:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:26:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:28:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:29:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:29:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:29:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:29:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:29:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:29:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:29:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:29:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:31:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 18:31:17 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1752.
+ 1 SYSTEMPATH\BaseModel.php(916): CodeIgniter\BaseModel->transformDataToArray('orlando@gmail.com', 'update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], 'orlando@gmail.com')
+ 3 APPPATH\Controllers\UsuarioController.php(152): CodeIgniter\Model->update('21', 'orlando@gmail.com')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 18:32:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 18:32:55 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1752.
+ 1 SYSTEMPATH\BaseModel.php(916): CodeIgniter\BaseModel->transformDataToArray('orlando@gmail.com', 'update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], 'orlando@gmail.com')
+ 3 APPPATH\Controllers\UsuarioController.php(152): CodeIgniter\Model->update('21', 'orlando@gmail.com')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 18:33:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:34:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 18:34:00 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1752.
+ 1 SYSTEMPATH\BaseModel.php(916): CodeIgniter\BaseModel->transformDataToArray('orlando@gmail.com', 'update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], 'orlando@gmail.com')
+ 3 APPPATH\Controllers\UsuarioController.php(153): CodeIgniter\Model->update(21, 'orlando@gmail.com')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 18:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 18:34:41 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1752.
+ 1 SYSTEMPATH\BaseModel.php(916): CodeIgniter\BaseModel->transformDataToArray('orlando@gmail.com', 'update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], 'orlando@gmail.com')
+ 3 APPPATH\Controllers\UsuarioController.php(153): CodeIgniter\Model->update(21, 'orlando@gmail.com')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 18:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 18:35:16 --> Undefined constant "App\Controllers\redirect"
+in APPPATH\Controllers\UsuarioController.php on line 154.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 18:35:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 18:35:20 --> Undefined constant "App\Controllers\redirect"
+in APPPATH\Controllers\UsuarioController.php on line 154.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 18:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:35:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:38:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:38:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:38:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:38:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:38:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:39:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:42:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:43:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:43:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:43:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:43:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:43:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:43:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:43:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 18:43:18 --> Undefined array key 0
+in APPPATH\Controllers\UsuarioController.php on line 150.
+ 1 APPPATH\Controllers\UsuarioController.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 150)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 18:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 18:44:48 --> Undefined array key 0
+in APPPATH\Controllers\UsuarioController.php on line 150.
+ 1 APPPATH\Controllers\UsuarioController.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 150)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 18:45:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 18:45:17 --> Undefined array key "Id"
+in APPPATH\Controllers\UsuarioController.php on line 150.
+ 1 APPPATH\Controllers\UsuarioController.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Id"', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 150)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 18:46:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 18:46:28 --> Undefined array key 0
+in APPPATH\Controllers\UsuarioController.php on line 150.
+ 1 APPPATH\Controllers\UsuarioController.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 150)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 18:47:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 18:47:03 --> Undefined array key 0
+in APPPATH\Controllers\UsuarioController.php on line 150.
+ 1 APPPATH\Controllers\UsuarioController.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 150)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 18:47:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 18:47:14 --> Undefined array key "Email"
+in APPPATH\Controllers\UsuarioController.php on line 150.
+ 1 APPPATH\Controllers\UsuarioController.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Email"', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 150)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 18:48:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 18:48:34 --> Undefined array key 0
+in APPPATH\Controllers\UsuarioController.php on line 150.
+ 1 APPPATH\Controllers\UsuarioController.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 150)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 18:48:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 18:48:48 --> Undefined array key "Email"
+in APPPATH\Controllers\UsuarioController.php on line 150.
+ 1 APPPATH\Controllers\UsuarioController.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Email"', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 150)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 18:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 18:51:08 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+in APPPATH\Controllers\UsuarioController.php on line 150.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 18:51:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 18:51:28 --> Undefined array key 0
+in APPPATH\Controllers\UsuarioController.php on line 150.
+ 1 APPPATH\Controllers\UsuarioController.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 150)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 18:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:58:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:58:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:59:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 18:59:03 --> Attempt to read property "Email" on null
+in APPPATH\Controllers\UsuarioController.php on line 149.
+ 1 APPPATH\Controllers\UsuarioController.php(149): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "Email" on null', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 149)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 19:00:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:00:45 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\UsuarioController.php on line 149.
+ 1 APPPATH\Controllers\UsuarioController.php(149): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 149)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 19:03:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:03:17 --> count(): Argument #1 ($value) must be of type Countable|array, CodeIgniter\Database\MySQLi\Result given
+in APPPATH\Controllers\UsuarioController.php on line 151.
+ 1 APPPATH\Controllers\UsuarioController.php(151): count(Object(CodeIgniter\Database\MySQLi\Result))
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 19:03:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:03:47 --> Attempt to read property "Email" on null
+in APPPATH\Controllers\UsuarioController.php on line 151.
+ 1 APPPATH\Controllers\UsuarioController.php(151): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "Email" on null', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 151)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 19:04:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:04:57 --> Attempt to read property "Email" on null
+in APPPATH\Controllers\UsuarioController.php on line 150.
+ 1 APPPATH\Controllers\UsuarioController.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "Email" on null', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 150)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 19:05:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:05:29 --> Attempt to read property "Email" on null
+in APPPATH\Controllers\UsuarioController.php on line 150.
+ 1 APPPATH\Controllers\UsuarioController.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "Email" on null', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 150)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 19:06:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:06:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:06:29 --> Attempt to read property "Email" on null
+in APPPATH\Controllers\UsuarioController.php on line 150.
+ 1 APPPATH\Controllers\UsuarioController.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "Email" on null', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 150)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 19:07:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:07:17 --> Attempt to read property "Email" on null
+in APPPATH\Controllers\UsuarioController.php on line 149.
+ 1 APPPATH\Controllers\UsuarioController.php(149): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "Email" on null', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 149)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 19:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:08:08 --> Attempt to read property "Email" on null
+in APPPATH\Controllers\UsuarioController.php on line 149.
+ 1 APPPATH\Controllers\UsuarioController.php(149): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "Email" on null', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 149)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 19:09:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:09:59 --> Undefined variable $query
+in APPPATH\Controllers\UsuarioController.php on line 149.
+ 1 APPPATH\Controllers\UsuarioController.php(149): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $query', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 149)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 19:10:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:10:12 --> mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, Usuarios given
+in SYSTEMPATH\Database\MySQLi\Result.php on line 154.
+ 1 SYSTEMPATH\Database\MySQLi\Result.php(154): mysqli_result->fetch_object('Usuarios')
+ 2 SYSTEMPATH\Database\BaseResult.php(159): CodeIgniter\Database\MySQLi\Result->fetchObject('Usuarios')
+ 3 SYSTEMPATH\Database\BaseResult.php(300): CodeIgniter\Database\BaseResult->getCustomResultObject('Usuarios')
+ 4 APPPATH\Controllers\UsuarioController.php(149): CodeIgniter\Database\BaseResult->getCustomRowObject(0, 'Usuarios')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 19:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:12:29 --> count(): Argument #1 ($value) must be of type Countable|array, stdClass given
+in APPPATH\Controllers\UsuarioController.php on line 151.
+ 1 APPPATH\Controllers\UsuarioController.php(151): count(Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 19:14:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:14:25 --> Undefined variable $Id
+in APPPATH\Controllers\UsuarioController.php on line 155.
+ 1 APPPATH\Controllers\UsuarioController.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Id', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 155)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 19:14:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:14:43 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1752.
+ 1 SYSTEMPATH\BaseModel.php(916): CodeIgniter\BaseModel->transformDataToArray('orlando2222@gmail.com', 'update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], 'orlando2222@gmail.com')
+ 3 APPPATH\Controllers\UsuarioController.php(156): CodeIgniter\Model->update('21', 'orlando2222@gmail.com')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 19:15:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:15:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:15:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:16:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:16:59 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1752.
+ 1 SYSTEMPATH\BaseModel.php(916): CodeIgniter\BaseModel->transformDataToArray('orlando2344@gmail.com', 'update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], 'orlando2344@gmail.com')
+ 3 APPPATH\Controllers\UsuarioController.php(156): CodeIgniter\Model->update('orlando@gmail.com', 'orlando2344@gmail.com')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 19:31:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:31:11 --> Call to undefined method stdClass::where()
+in APPPATH\Controllers\UsuarioController.php on line 156.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 19:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:32:11 --> Undefined variable $Builder
+in APPPATH\Controllers\UsuarioController.php on line 155.
+ 1 APPPATH\Controllers\UsuarioController.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Builder', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 155)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 19:32:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:32:53 --> Call to a member function set() on null
+in APPPATH\Controllers\UsuarioController.php on line 156.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 19:34:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:34:42 --> Call to undefined method stdClass::set()
+in APPPATH\Controllers\UsuarioController.php on line 156.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 19:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:36:06 --> Call to undefined method stdClass::set()
+in APPPATH\Controllers\UsuarioController.php on line 156.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 19:36:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:36:22 --> Call to undefined method stdClass::set()
+in APPPATH\Controllers\UsuarioController.php on line 156.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 19:37:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:37:12 --> Call to undefined function App\Controllers\where()
+in APPPATH\Controllers\UsuarioController.php on line 157.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 19:37:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:37:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:38:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:38:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:38:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:40:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:40:26 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1752.
+ 1 SYSTEMPATH\BaseModel.php(916): CodeIgniter\BaseModel->transformDataToArray('orlando@23gmail.com', 'update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], 'orlando@23gmail.com')
+ 3 APPPATH\Controllers\UsuarioController.php(156): CodeIgniter\Model->update('orlando@gmail.com', 'orlando@23gmail.com')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 19:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:40:57 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1752.
+ 1 SYSTEMPATH\BaseModel.php(916): CodeIgniter\BaseModel->transformDataToArray('orlando@23gmail.com', 'update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], 'orlando@23gmail.com')
+ 3 APPPATH\Controllers\UsuarioController.php(156): CodeIgniter\Model->update('orlando@gmail.com', 'orlando@23gmail.com')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 19:42:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:43:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:43:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:43:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:50:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:50:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:57:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:57:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:57:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:57:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:57:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:57:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:57:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:57:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:57:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:57:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:57:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:57:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:57:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:57:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:57:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:59:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:59:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:59:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:59:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:59:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:59:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:59:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:00:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:00:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:00:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:02:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:02:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:02:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:02:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:02:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:11:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:11:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:11:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:11:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:11:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:12:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 20:12:04 --> CodeIgniter\Session\Session::push(): Argument #2 ($data) must be of type array, string given, called in C:\xampp\htdocs\ProyectoAppNotas\app\Controllers\UsuarioController.php on line 160
+in SYSTEMPATH\Session\Session.php on line 537.
+ 1 APPPATH\Controllers\UsuarioController.php(160): CodeIgniter\Session\Session->push('Email', 'orlandoe@gmail.com')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 20:13:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:13:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:13:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:14:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:14:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:14:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:14:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:14:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 20:14:41 --> CodeIgniter\Session\Session::push(): Argument #1 ($key) must be of type string, array given, called in C:\xampp\htdocs\ProyectoAppNotas\app\Controllers\UsuarioController.php on line 164
+in SYSTEMPATH\Session\Session.php on line 537.
+ 1 APPPATH\Controllers\UsuarioController.php(164): CodeIgniter\Session\Session->push([...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 20:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:15:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:15:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:16:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:16:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:16:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:16:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:16:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 20:16:51 --> CodeIgniter\Session\Session::push(): Argument #2 ($data) must be of type array, string given, called in C:\xampp\htdocs\ProyectoAppNotas\app\Controllers\UsuarioController.php on line 162
+in SYSTEMPATH\Session\Session.php on line 537.
+ 1 APPPATH\Controllers\UsuarioController.php(162): CodeIgniter\Session\Session->push('Email', 'orlandoccx@gmail.com')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 20:17:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:17:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:25:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:25:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 20:25:47 --> Attempt to read property "Email" on null
+in APPPATH\Controllers\UsuarioController.php on line 152.
+ 1 APPPATH\Controllers\UsuarioController.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "Email" on null', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 152)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 20:26:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:26:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:26:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:29:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:29:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:32:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:35:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:35:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:35:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:35:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:35:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:36:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:36:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:37:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:37:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:38:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:38:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:38:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:38:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:38:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:39:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:39:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:39:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:39:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:40:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:40:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:40:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:40:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:40:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:40:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:40:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:40:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:40:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:40:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:40:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:40:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:40:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:40:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:40:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:54:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:54:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:54:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:54:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:55:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:55:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:55:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:55:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:57:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:57:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:57:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:57:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:57:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:57:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:57:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:57:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:58:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:58:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:58:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:58:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:58:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:58:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:58:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:58:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:34:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:34:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:34:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:34:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:34:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:34:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:34:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:34:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:34:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:34:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:34:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:34:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:34:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:34:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:35:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:35:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:35:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:35:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:35:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:36:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:36:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:36:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:36:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:36:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:37:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:37:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:37:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:37:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:37:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:37:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 21:37:59 --> Undefined property: App\Controllers\UsuarioController::$sesion
+in APPPATH\Controllers\UsuarioController.php on line 176.
+ 1 APPPATH\Controllers\UsuarioController.php(176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\UsuarioController::$sesion', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 176)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 21:41:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:41:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:41:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:41:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:41:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:41:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:41:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:42:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:42:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:42:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:42:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:42:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:42:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:42:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:45:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:45:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:45:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:45:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:45:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:45:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:46:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:46:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:46:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:46:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:46:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:47:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 21:47:00 --> Undefined variable $sthis
+in APPPATH\Controllers\UsuarioController.php on line 167.
+ 1 APPPATH\Controllers\UsuarioController.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sthis', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\UsuarioController.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuarioController->UpdateEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-11-12 21:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:47:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:47:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:48:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:51:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:51:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:51:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:51:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:52:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:52:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:52:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 22:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 22:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 22:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 22:24:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 22:24:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 22:24:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+>>>>>>> 5dc35988b19c6bcb4407a26791a180ef10d93dcf

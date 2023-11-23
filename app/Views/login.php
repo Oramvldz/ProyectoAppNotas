@@ -7,7 +7,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="<?=base_url("bootstrap/css/bootstrap.min.css")?>">
   </head>
-  <body style="background-color: #DFFFD8;">
+  <body style="background-color: #E1F2FB;">
 
     <?php if($mensaje==1): ?>
         <div class="alert alert-success alert-dismissible">

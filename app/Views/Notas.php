@@ -8,7 +8,7 @@
 
     <title>Mis Notas</title>
 </head>
-<body style="background-color: #DFFFD8;">
+<body style="background-color: #E1F2FB;">
     <!--Barra De Navegacion-->
 <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
   <div class="container-fluid">
@@ -41,6 +41,7 @@
   </div>
 </nav>
 
+<<<<<<< HEAD
     <div class= "bg-white p-5 rounded-5 shadow">
       <div>
       
@@ -66,6 +67,15 @@
 
 
 
+=======
+<?php if($mensaje==6): ?>
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            Nota agregada con exito
+        </div>
+        <?php endif; ?>
+<!--aqui va div de mis notas-->
+>>>>>>> 5dc35988b19c6bcb4407a26791a180ef10d93dcf
 
 <div class="d-flex fixed-bottom justify-content-end">
     <a href="<?=base_url("/MisNotas/CrearNota")?>">
