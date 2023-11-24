@@ -1,22 +1,6 @@
-.bg-white{
-    height: 715px;
-    width: 1800px;
-    display:flex;
-    position: absolute;
-    margin-left: 60px;
-    margin-top: 20px;
-    margin-bottom: 50px;
-
-}
-
 .bg-color{
     background-color: darkseagreen;
 }
-    
-.card{
-    text-align: center;
-}
-  
 
 
 

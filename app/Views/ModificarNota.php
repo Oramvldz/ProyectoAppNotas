@@ -34,16 +34,15 @@
 </nav>
 
     <div class="container mt-3">
-        <form action="<?= base_url("/MisNotas/CrearNota/Process")?>" method="post">
+        <form action="<?= base_url("/MisNotas/ModificarNota/Process/".$Nota['Id'])?>" method="post">
             
             <div class="input-group">
                 <span class="input-group-text bg-white">Titulo</span>
-                <input class="form-control" type="text" value="Ejemplo Inserte Php" placeholder="Titulo" name="Titulo" maxlength="100" required>
+                <input class="form-control" type="text" value="<?php echo($Nota['Titulo']);?>" placeholder="Titulo" name="Titulo" maxlength="100" required>
             </div>
 
-            <textarea class="form-control mt-3" name="Contenido" value="Ejemplo Inserte Php" cols="30" rows="10" placeholder="Contenido" maxlength="1000" required><?php echo("Ejemplo Inserte Php"); ?></textarea>
+            <textarea class="form-control mt-3" name="Contenido" value="Ejemplo Inserte Php" cols="30" rows="10" placeholder="Contenido" maxlength="1000" required><?php echo($Nota['Contenido']);?></textarea>
             <div class="d-flex align-items-center">
-                <button class="btn btn-primary mt-3 w-100" type="submit" name="Evento_Cancelar">Cancelar </button>
                 <button class="btn btn-primary ms-2 mt-3 w-100" type="submit">Ingresar contenido</button>      
             </div>      
         </form>

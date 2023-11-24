@@ -25,11 +25,14 @@ $routes->post("Perfil/Cambiar_Contraseña/Procesar","UsuarioController::UpdatePa
 //Devuelve vistas Notas
 $routes->get("/MisNotas/CrearNota","NotasController::VistaCrearNota");
 $routes->get("/MisNotas","NotasController::Notas");
-$routes->get("/MisNotas/ModificarNota","NotasController::VistaModificarNota");
+$routes->get("/MisNotas/ModificarNota/(:num)","NotasController::VistaModificarNota/$1");
 $routes->get("/MisNotas/VerNota","NotasController::VistaVerNota");
+$routes->get("/MisNotas/VisualizarNota/(:num)","NotasController::VistaVisualizarNota/$1");
 //Process
 //crear ruta process y el metodo en notas controller
 $routes->post("/MisNotas/CrearNota/Process","NotasController::CrearNota");
+$routes->get("/MisNotas/EliminarNota/(:num)","NotasController::EliminarNota/$1");
+$routes->post("/MisNotas/ModificarNota/Process/(:num)","NotasController::ActualizarNota/$1"); //
 
 
 

@@ -21,17 +21,12 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-
-
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="<?=base_url("/Perfil")?>">Perfil</a>
         </li>
-      </ul>
-
-    
+      </ul>  
  <ul class="navbar-nav ms-auto">
         <li class="navbar-item">
         <a class="nav-link active" aria-current="page" href="<?=base_url("/CerrarSesion/Process")?>">Cerrar sesion</a>
@@ -41,33 +36,6 @@
   </div>
 </nav>
 
-<<<<<<< HEAD
-    <div class= "bg-white p-5 rounded-5 shadow">
-      <div>
-      
-      <div class="bg-color p-5 rounded-5 shadow">
-					<h3>Titulo</h3>
-					<h5>Informacion de la nota</h5>
-					<button class="btn btn-warning">Editar</button>
-					<button class="btn btn-danger">Borrar</button>
-				</div>
-    </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
-  </div>
-</div>
-    
-
-
-
-=======
 <?php if($mensaje==6): ?>
         <div class="alert alert-success alert-dismissible">
             <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
@@ -75,17 +43,34 @@
         </div>
         <?php endif; ?>
 <!--aqui va div de mis notas-->
->>>>>>> 5dc35988b19c6bcb4407a26791a180ef10d93dcf
+
+<?php if(count($Notas)>0):?>
+
+<div class="overflow-auto " style="height: 30rem;">
+
+  <?php foreach($Notas as $Nota):?>
+
+    <div class="card mx-auto mt-3" style="width: 15rem;">
+      <div class="card-body">
+          <h5 class="card-title text-center"><?= $Nota['Titulo']?></h5>
+          <div class="text-center">
+            <a href="<?=base_url("/MisNotas/VisualizarNota/".$Nota['Id']);?>" class="card-link" name="POST"><img src="iconos/Visualizar.png" style="height: 2rem;"></a>
+            <a href="<?=base_url("/MisNotas/ModificarNota/".$Nota['Id'])?>" class="card-link"><img src="iconos/Editar.png" style="height: 2rem;"></a>
+            <a href="<?=base_url("MisNotas/EliminarNota/".$Nota['Id'])?>" class="card-link"><img src="iconos/Eliminar.png" style="height: 2rem;"></a>
+          </div>
+      </div>
+    </div>
+
+    <?php endforeach;?>
+
+</div>
+<?php endif;?>
 
 <div class="d-flex fixed-bottom justify-content-end">
     <a href="<?=base_url("/MisNotas/CrearNota")?>">
     <button class="rounded-circle btn btn-danger mb-4 me-4 shadow-sm"style="width:70px;height:70px"><h1>+</h1></button>
     </a>
 </div>
-
-
-
-
 
 <script src="<?=base_url("bootstrap/js/bootstrap.min.js")?>"></script>
 </body>

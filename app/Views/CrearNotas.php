@@ -43,7 +43,6 @@
 
             <textarea class="form-control mt-3" name="Contenido" cols="30" rows="10" placeholder="Contenido" maxlength="1000" required></textarea>
             <div class="d-flex align-items-center">
-                <button class="btn btn-primary mt-3 w-100" type="submit" name="Evento_Cancelar">Cancelar </button>
                 <button class="btn btn-primary ms-2 mt-3 w-100" type="submit">Ingresar contenido</button>      
             </div>      
         </form>
