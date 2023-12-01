@@ -59,17 +59,17 @@
         <div class="bg-white p-5 rounded-5 text-secondary shadow">
 
             <div class="input-group">
-                <span class="input-group-text bg-white"><img src="iconos/username.png" style="height: 1rem;"></span>
+                <span class="input-group-text bg-white">Nombres</span>
                 <input type="text" class="form-control" name="Nombres" value="<?php echo ($Usuario['Nombres']);?>" disabled>
             </div>
 
             <div class="input-group">
-                <span class="input-group-text bg-white mt-2"><img src="iconos/username.png" style="height: 1rem;"></span>
+                <span class="input-group-text bg-white mt-2">Apellidos</span>
                 <input type="text" class="form-control mt-2" name="Apellidos" value="<?php echo ($Usuario['Apellidos']);?>" disabled>
             </div>
             
             <div class="input-group">
-                <span class="input-group-text bg-white mt-2"><img src="iconos/username.png" style="height: 1rem;"></span>
+                <span class="input-group-text bg-white mt-2">Correo &nbsp;&nbsp;&nbsp;</span>
                 <input type="email" name="Email" value="<?php echo($Usuario['Email'] )?>" class=" form-control mt-2" disabled>
             </div>
 
