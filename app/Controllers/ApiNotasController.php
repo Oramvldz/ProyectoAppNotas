@@ -44,10 +44,10 @@ class ApiNotasController extends ResourceController
      *
      * @return mixed
      */
-    public function SeleccionarNotas($Idusuario)
+    public function ApiSeleccionarNotas($Idusuario=null)
     {
         $NotasModel=new NotasModel();
-        $Data['Notas']=$NotasModel->getwhere(['Id_usuario'=>$Idusuario])->getResult();
+        $Data['Notas']=$NotasModel->orderby('Id','desc')->getwhere(['Id_usuario'=>$Idusuario])->getResult();
         return $this->respond($Data['Notas']);
     }
 
@@ -76,7 +76,7 @@ class ApiNotasController extends ResourceController
      *
      * @return mixed
      */
-    public function ModificarNota($Id = null)
+    public function ApiModificarNota($Id = null)
     {
         $NotasModel=new NotasModel();
         
@@ -122,7 +122,7 @@ class ApiNotasController extends ResourceController
      *
      * @return mixed
      */
-    public function delete($Id = null)
+    public function Apidelete($Id = null)
     {
         $NotasModel= new NotasModel();
         $NotasModel->delete(['Id'=>$Id]);

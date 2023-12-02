@@ -42,6 +42,13 @@
             Nota agregada con exito
         </div>
         <?php endif; ?>
+
+        <?php if(!isset($mensaje)): ?>
+        <div class="alert alert-danger alert-dismissible">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            Esta aplicacion es para un proyecto escolar, no para uso comercial
+        </div> 
+    <?php endif?>
 <!--aqui va div de mis notas-->
 
 <?php if(count($Notas)>0):?>

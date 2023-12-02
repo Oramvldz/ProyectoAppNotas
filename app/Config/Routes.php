@@ -38,34 +38,14 @@ $routes->post("/MisNotas/ModificarNota/Process/(:num)","NotasController::Actuali
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //Api usuarios           /*any=lo que sea que se le pase       /1/2 hace referencia a los parametros que parametro es cual dentro del uri*/
-$routes->get("/ApiLogin/(:any)/(:any)","ApiUsuarioController::Login/$1/$2");               //Login                                                                        
-$routes->post("/ApiRegistro","ApiUsuarioController::Registro");                            //Registro
-$routes->put("/ApiActualizarEmail/(:num)","ApiUsuarioController::updateEmail/$1");         //Actualizar email
-$routes->get("/ApiSelectEmail/(:any)","ApiUsuarioController::SelectPorEmail/$1");          //Select para actualizar email y para registro
-$routes->put("/ApiActualizarPass/(:num)","ApiUsuarioController::updatePass/$1");           //Actualizar contraseña
+$routes->post("/ApiLogin","ApiUsuarioController::ApiLogin");               //Login                                                                        
+$routes->post("/ApiRegistro","ApiUsuarioController::ApiRegistro");                            //Registro
+$routes->put("/ApiActualizarEmail/(:num)","ApiUsuarioController::ApiupdateEmail/$1");         //Actualizar email
+$routes->get("/ApiSelectEmail/(:any)","ApiUsuarioController::ApiSelectPorEmail/$1");          //Select para actualizar email y para registro
+$routes->put("/ApiActualizarPass/(:num)","ApiUsuarioController::ApiupdatePass/$1");           //Actualizar contraseña
 //Api notas NotasController
-
 $routes->post("/MisNotas/CrearNota","ApiNotasController::ApiCrearNota");  //Crear nueva nota
-$routes->get("/MisNotas/SeleccionarNotas/(:num)","ApiNotasController::SeleccionarNotas/$1"); //Seleccionar notas
-$routes->delete("/MisNotas/EliminarNota/(:num)","ApiNotasController::delete/$1");//Eliminar nota
-
-//No elimina todas las notas
-$routes->delete("/MisNotas/EliminarTodasNotas/(:num)","ApiNotasController::EliminarMisNotas/$1"); //Eliminar todas las notas                                                                     
-$routes->put("/MisNotas/ModificarNota/(:num)","ApiNotasController::ModificarNota/$1");  //Modificar notas                                                                      
-                                                                            
-
+$routes->get("/MisNotas/SeleccionarNotas/(:num)","ApiNotasController::ApiSeleccionarNotas/$1"); //Seleccionar notas depende el usuario
+$routes->delete("/MisNotas/EliminarNota/(:num)","ApiNotasController::Apidelete/$1");//Eliminar nota
+$routes->put("/MisNotas/ModificarNota/(:num)","ApiNotasController::ApiModificarNota/$1");  //Modificar notas                                                                      

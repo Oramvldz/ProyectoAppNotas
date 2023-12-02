@@ -36,7 +36,17 @@ class NotasController extends BaseController
 
         if($this->session->get('Is_Logged'))
         {
-            return view("ModificarNota", compact('Nota'));
+            //poner esto en el de eliminar  
+            $Nota=$NotasModel->find($Id);
+
+            if($Nota)
+            {
+                return view("ModificarNota", compact('Nota'));
+            }
+            else
+            {
+                return redirect()->to(base_url('/MisNotas'));
+            }
         }else
         {
             return redirect()->to(base_url('/Login'));
@@ -126,8 +136,8 @@ class NotasController extends BaseController
             'Titulo'=>$this->request->getVar('Titulo'),
             'Contenido'=>$this->request->getVar('Contenido')
         ];
-        $NotasModel->Update($Id,$Data);
-
+            $NotasModel->Update($Id,$Data);
+        
         return redirect()->to(base_url('/MisNotas'));
 
     }

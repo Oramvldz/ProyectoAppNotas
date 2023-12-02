@@ -25,9 +25,14 @@ class ApiUsuarioController extends ResourceController
      *
      * @return mixed
      */
-    public function ApiLogin($Email = null, $Pass=null)
+    public function ApiLogin()
     {
+        
         $UsuarioModel=new UsuarioModel();
+
+            $Email=$this->request->getVar('Email');
+            $Pass=$this->request->getVar('Pass');
+
         $UsuarioEncontrado=$UsuarioModel->getWhere(['Email'=>$Email,'Pass'=>$Pass])->getResult();    
         if($UsuarioEncontrado)
         {
@@ -37,6 +42,7 @@ class ApiUsuarioController extends ResourceController
         {
             return $this->failNotFound("Usuario no encontrado");
         }
+        
     }
 
     public function ApiSelectPorEmail($Email= null)

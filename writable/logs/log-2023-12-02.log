@@ -1,0 +1,764 @@
+INFO - 2023-12-02 03:36:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-02 03:37:00 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\ProyectoAppNotas\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAppNotas\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'AppNotas', 3306, '', 0)
+#1 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseBuilder.php(1748): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ProyectoAppNotas\system\Model.php(871): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\htdocs\ProyectoAppNotas\app\Controllers\NotasController.php(17): CodeIgniter\Model->__call('getWhere', Array)
+#6 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(942): App\Controllers\NotasController->Notas()
+#7 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotasController))
+#8 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ProyectoAppNotas\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ProyectoAppNotas\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\ProyectoAppNotas\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseBuilder.php(1748): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ProyectoAppNotas\system\Model.php(871): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#4 C:\xampp\htdocs\ProyectoAppNotas\app\Controllers\NotasController.php(17): CodeIgniter\Model->__call('getWhere', Array)
+#5 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(942): App\Controllers\NotasController->Notas()
+#6 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotasController))
+#7 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProyectoAppNotas\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ProyectoAppNotas\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-12-02 03:37:00 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1748): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notas`
+WHERE `Id_usuario` IS NULL
+ORDER BY `id` DESC', [], false)
+ 3 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 4 APPPATH\Controllers\NotasController.php(17): CodeIgniter\Model->__call('getWhere', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\NotasController->Notas()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotasController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-12-02 03:37:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-02 03:37:04 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\ProyectoAppNotas\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAppNotas\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'AppNotas', 3306, '', 0)
+#1 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseBuilder.php(1748): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ProyectoAppNotas\system\Model.php(871): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\htdocs\ProyectoAppNotas\app\Controllers\NotasController.php(17): CodeIgniter\Model->__call('getWhere', Array)
+#6 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(942): App\Controllers\NotasController->Notas()
+#7 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotasController))
+#8 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ProyectoAppNotas\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ProyectoAppNotas\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\ProyectoAppNotas\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseBuilder.php(1748): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ProyectoAppNotas\system\Model.php(871): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#4 C:\xampp\htdocs\ProyectoAppNotas\app\Controllers\NotasController.php(17): CodeIgniter\Model->__call('getWhere', Array)
+#5 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(942): App\Controllers\NotasController->Notas()
+#6 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotasController))
+#7 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProyectoAppNotas\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ProyectoAppNotas\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-12-02 03:37:04 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1748): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notas`
+WHERE `Id_usuario` IS NULL
+ORDER BY `id` DESC', [], false)
+ 3 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 4 APPPATH\Controllers\NotasController.php(17): CodeIgniter\Model->__call('getWhere', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\NotasController->Notas()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotasController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-12-02 03:37:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 03:37:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 03:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 03:37:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 03:37:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 03:37:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 03:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 03:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 03:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 03:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 03:38:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 03:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 03:51:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 03:51:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 03:51:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 03:51:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 03:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 03:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 03:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 03:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 03:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 03:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 03:56:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 03:56:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 03:56:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 03:56:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 03:56:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 03:59:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 03:59:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:05:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:05:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:05:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:05:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:05:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:05:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:07:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:07:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:07:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:08:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:08:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:09:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:09:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:09:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:09:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:09:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:17:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:17:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:25:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:25:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:25:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:25:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:25:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:26:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:26:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:26:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:26:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:26:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:28:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:28:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:28:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:28:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:28:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:28:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:28:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:28:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:28:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:28:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:29:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:29:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:29:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 04:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-02 04:32:45 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiLogin', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiLogin')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiLogin')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 04:33:10 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiLogin', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiLogin')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiLogin')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 04:34:06 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiLogin', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiLogin')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiLogin')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 04:35:25 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiLogin', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiLogin')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiLogin')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 04:35:57 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiLogin', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiLogin')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiLogin')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 04:36:47 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiLogin', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiLogin')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiLogin')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 04:37:42 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiLogin', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiLogin')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiLogin')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 04:39:07 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiLogin', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiLogin')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiLogin')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 04:40:44 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiLogin', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiLogin')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiLogin/')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 04:41:01 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiLogin', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiLogin')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiLogin')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 04:41:44 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiLogin', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiLogin')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiLogin')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 04:41:48 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiLogin', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiLogin')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiLogin')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 04:43:57 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiLogin', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiLogin')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiLogin')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 04:45:04 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiLogin', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiLogin')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiLogin')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 04:45:05 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiLogin', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiLogin')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiLogin')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 04:45:57 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiLogin', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiLogin')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiLogin')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 04:45:58 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiLogin', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiLogin')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiLogin')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 04:48:36 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiLogin', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiLogin')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiLogin')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 04:48:42 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiLogin', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiLogin')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiLogin')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 04:49:31 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiLogin', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiLogin')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiLogin')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 04:52:17 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiLogin', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiLogin')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiLogin')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 04:52:22 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiLogin', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiLogin')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiLogin')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 04:53:32 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiRegistro', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiRegistro')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiRegistro')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 04:54:31 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiRegistro', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiRegistro')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiRegistro')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 04:55:50 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiRegistro', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiRegistro')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiRegistro')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 04:56:31 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiRegistro', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiRegistro')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiRegistro')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 04:57:08 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiRegistro', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiRegistro')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiRegistro')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 04:57:27 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiRegistro', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiRegistro')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiRegistro')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-12-02 04:59:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-02 04:59:52 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'MisNotas/ModificarNota/75', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('MisNotas/ModificarNota/75')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('MisNotas/ModificarNota/75')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 05:00:38 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiRegistro', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiRegistro')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiRegistro')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 05:04:04 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'MisNotas/CrearNota', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('MisNotas/CrearNota')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('MisNotas/CrearNota')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 05:04:12 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'MisNotas/CrearNota', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('MisNotas/CrearNota')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('MisNotas/CrearNota')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 05:04:14 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'MisNotas/CrearNota', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('MisNotas/CrearNota')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('MisNotas/CrearNota')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 05:04:17 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'MisNotas/CrearNota', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('MisNotas/CrearNota')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('MisNotas/CrearNota')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 05:04:19 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'MisNotas/CrearNota', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('MisNotas/CrearNota')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('MisNotas/CrearNota')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-12-02 05:06:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-02 05:07:55 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'MisNotas/CrearNota', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('MisNotas/CrearNota')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('MisNotas/CrearNota')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 05:08:35 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'MisNotas/CrearNota', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('MisNotas/CrearNota')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('MisNotas/CrearNota')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 05:08:53 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'MisNotas/CrearNota', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('MisNotas/CrearNota')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('MisNotas/CrearNota')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 05:10:22 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'MisNotas/CrearNota', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('MisNotas/CrearNota')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('MisNotas/CrearNota')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 05:11:59 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiLogin', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiLogin')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiLogin')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 05:15:06 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiRegistro', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiRegistro')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiRegistro')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 05:15:15 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiRegistro', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiRegistro')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiRegistro')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-02 05:17:11 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 9
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 9', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^ApiLogin)$#u', 'ApiRegistro', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('ApiRegistro')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiRegistro')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+ERROR - 2023-12-02 05:20:21 --> mysqli_sql_exception: Column 'Nombres' cannot be null in C:\xampp\htdocs\ProyectoAppNotas\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAppNotas\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\ProyectoAppNotas\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoAppNotas\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoAppNotas\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoAppNotas\app\Controllers\ApiUsuarioController.php(89): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(942): App\Controllers\ApiUsuarioController->ApiRegistro()
+#9 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiUsuarioController))
+#10 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoAppNotas\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ProyectoAppNotas\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-12-02 05:20:21 --> Column 'Nombres' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`Email`, `Pass`, `Nombres`, `Apellidos`) VALUES (:Email:, :Pass:, :Nombres:, :Apellidos:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ApiUsuarioController.php(89): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ApiUsuarioController->ApiRegistro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiUsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+ERROR - 2023-12-02 05:31:22 --> mysqli_sql_exception: Column 'Id_usuario' cannot be null in C:\xampp\htdocs\ProyectoAppNotas\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAppNotas\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', Array, false)
+#4 C:\xampp\htdocs\ProyectoAppNotas\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoAppNotas\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoAppNotas\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoAppNotas\app\Controllers\ApiNotasController.php(29): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(942): App\Controllers\ApiNotasController->ApiCrearNota()
+#9 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiNotasController))
+#10 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoAppNotas\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ProyectoAppNotas\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-12-02 05:31:22 --> Column 'Id_usuario' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `notas` (`Id_usuario`, `Titulo`, `Contenido`) VALUES (:Id_usuario:, :Titulo:, :Contenido:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ApiNotasController.php(29): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ApiNotasController->ApiCrearNota()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiNotasController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+ERROR - 2023-12-02 05:31:44 --> mysqli_sql_exception: Column 'Id_usuario' cannot be null in C:\xampp\htdocs\ProyectoAppNotas\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAppNotas\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\ProyectoAppNotas\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', Array, false)
+#4 C:\xampp\htdocs\ProyectoAppNotas\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoAppNotas\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoAppNotas\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoAppNotas\app\Controllers\ApiNotasController.php(29): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(942): App\Controllers\ApiNotasController->ApiCrearNota()
+#9 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiNotasController))
+#10 C:\xampp\htdocs\ProyectoAppNotas\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoAppNotas\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ProyectoAppNotas\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-12-02 05:31:44 --> Column 'Id_usuario' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `notas` (`Id_usuario`, `Titulo`, `Contenido`) VALUES (:Id_usuario:, :Titulo:, :Contenido:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ApiNotasController.php(29): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ApiNotasController->ApiCrearNota()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiNotasController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+INFO - 2023-12-02 05:40:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:40:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:40:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:40:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:40:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:40:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:41:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:42:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:42:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:42:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:50:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:50:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:51:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:52:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:52:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:52:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:53:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:54:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:56:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 05:59:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 06:00:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 06:00:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 06:00:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 06:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 06:00:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 06:00:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 06:00:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 06:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 06:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 06:00:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 06:00:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 06:00:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 06:00:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 06:00:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 06:00:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 06:00:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 06:00:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 06:00:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 06:00:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 06:00:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 06:00:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 06:00:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-02 06:00:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

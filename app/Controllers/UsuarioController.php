@@ -17,7 +17,7 @@ class UsuarioController extends BaseController
         }else
         {
             $mensaje=session('mensaje');
-            return view("login",compact('mensaje'));
+            return view("Login",compact('mensaje'));
         }
     }
 

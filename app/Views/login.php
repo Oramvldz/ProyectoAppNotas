@@ -20,6 +20,13 @@
             Inicio de sesion denegado verifique sus credenciales de acceso
         </div> 
     <?php endif; ?>
+    
+    <?php if(!isset($mensaje)): ?>
+        <div class="alert alert-danger alert-dismissible">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            Esta aplicacion es para un proyecto escolar, no para uso comercial
+        </div> 
+    <?php endif?>
 
     <!--Para hacer el cuadro se necesitan 2 divs-->
     <div class="d-flex justify-content-center align-items-center vh-100">
