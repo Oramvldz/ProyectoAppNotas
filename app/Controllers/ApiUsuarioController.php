@@ -14,11 +14,12 @@ class ApiUsuarioController extends ResourceController
      *
      * @return mixed
      */
-    public function index()
+    public function ApiPerfil()
     {
         $UsuarioModel= new UsuarioModel();
-        $Data['usuarios']=$UsuarioModel->findall();
-        return $this->respond($Data['usuarios']);
+         $id=$this->request->getVar('Id');
+        $Data=$UsuarioModel->find($id);
+        return $this->respond($Data);
     }
     /**
      * Return the properties of a resource object
