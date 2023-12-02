@@ -52,7 +52,7 @@ class UsuarioController extends BaseController
             return view("perfil", compact('Usuario','mensaje'));
         }else
         {
-            return redirect()->to(base_url('/Login'));
+            return redirect()->to(base_url('/'));
         }
         
     }
@@ -66,7 +66,7 @@ class UsuarioController extends BaseController
             return view("CambiarEmail");
         }else
         {
-            return redirect()->to(base_url('/Login'));
+            return redirect()->to(base_url('/'));
         }
         
     }
@@ -80,7 +80,7 @@ class UsuarioController extends BaseController
             return view("CambiarContraseña");
         }else
         {
-            return redirect()->to(base_url('/Login'));
+            return redirect()->to(base_url('/'));
         }
         
     }
@@ -135,7 +135,7 @@ class UsuarioController extends BaseController
         }
         else
         {
-            return redirect()->to(base_url('/Login'))->with('mensaje','3');
+            return redirect()->to(base_url('/'))->with('mensaje','3');
         }
     }
 
@@ -212,7 +212,7 @@ class UsuarioController extends BaseController
     {
         $this->session=session();
         $this->session->destroy();
-        return redirect()->to(base_url('/Login'));
+        return redirect()->to(base_url('/'));
     }
 
 }

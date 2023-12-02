@@ -22,7 +22,7 @@ class NotasController extends BaseController
             return view("Notas", compact('mensaje','Notas'));
         }else
         {
-            return redirect()->to(base_url('/Login'));
+            return redirect()->to(base_url('/'));
         }
         
     }
@@ -49,7 +49,7 @@ class NotasController extends BaseController
             }
         }else
         {
-            return redirect()->to(base_url('/Login'));
+            return redirect()->to(base_url('/'));
         }
         
     }
@@ -64,7 +64,7 @@ class NotasController extends BaseController
             return view("VerNota");
         }else
         {
-            return redirect()->to(base_url('/Login'));
+            return redirect()->to(base_url('/'));
         }
         
     }
@@ -78,7 +78,7 @@ class NotasController extends BaseController
             return view("CrearNotas");
         }else
         {
-            return redirect()->to(base_url('/Login'));
+            return redirect()->to(base_url('/'));
         }
         
     }
@@ -95,7 +95,7 @@ class NotasController extends BaseController
             return view("VerNota",compact('Nota'));
         }else
         {
-            return redirect()->to(base_url('/Login'));
+            return redirect()->to(base_url('/'));
         }
         
     }

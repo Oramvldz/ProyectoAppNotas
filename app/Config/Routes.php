@@ -6,12 +6,11 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 
- $routes->get("/","Home::index");
 //todos los recursos como get,post,put y demas del usuario
 $routes->resource('/usuarios',['controller'=>'ApiUsuarioController']);
 
 //Devuelve vistas Usuario
-$routes->get("/Login","UsuarioController::VistaLogin");
+$routes->get("/","UsuarioController::VistaLogin");
 $routes->get("/Registro","UsuarioController::VistaRegistro");
 $routes->get("/Perfil","UsuarioController::VistaPerfil");
 $routes->get("/Perfil/Cambiar_Email","UsuarioController::VistaCambiarEmail");

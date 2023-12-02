@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <!-- PONER EL ICONO PROXIMAMENTE <link rel="icon" type="image/x-icon" href="/assets/logo-vt.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>AppNotas</title>
     <link rel="stylesheet" href="<?=base_url("bootstrap/css/bootstrap.min.css")?>">
   </head>
   <body style="background-color: #E1F2FB;">
