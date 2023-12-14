@@ -1,0 +1,94 @@
+CRITICAL - 2023-12-09 18:46:12 --> Call to undefined method App\Controllers\ApiUsuarioController::responseFailed()
+in APPPATH\Controllers\ApiUsuarioController.php on line 100.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ApiUsuarioController->ApiRegistro()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiUsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-09 18:46:31 --> Call to undefined method App\Controllers\ApiUsuarioController::response()
+in APPPATH\Controllers\ApiUsuarioController.php on line 100.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ApiUsuarioController->ApiRegistro()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiUsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-09 18:55:30 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\ApiUsuarioController.php on line 101.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ApiUsuarioController->ApiRegistro()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiUsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-09 18:56:05 --> count(): Argument #1 ($value) must be of type Countable|array, stdClass given
+in APPPATH\Controllers\ApiUsuarioController.php on line 94.
+ 1 APPPATH\Controllers\ApiUsuarioController.php(94): count(Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ApiUsuarioController->ApiRegistro()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiUsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-09 19:19:39 --> Call to undefined method CodeIgniter\HTTP\Response::getJsonArray()
+in APPPATH\Controllers\ApiUsuarioController.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ApiUsuarioController->ApiRegistro()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiUsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-09 19:21:52 --> Call to a member function GetJson() on array
+in APPPATH\Controllers\ApiUsuarioController.php on line 100.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ApiUsuarioController->ApiRegistro()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiUsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-09 19:22:08 --> Call to a member function GetJsonArray() on array
+in APPPATH\Controllers\ApiUsuarioController.php on line 100.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ApiUsuarioController->ApiRegistro()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiUsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-09 19:23:35 --> Array callback must have exactly two elements
+in APPPATH\Controllers\ApiUsuarioController.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ApiUsuarioController->ApiRegistro()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiUsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-09 19:23:46 --> Array callback must have exactly two elements
+in APPPATH\Controllers\ApiUsuarioController.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ApiUsuarioController->ApiRegistro()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiUsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-09 19:24:14 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::GetJsonArray()
+in APPPATH\Controllers\ApiUsuarioController.php on line 102.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ApiUsuarioController->ApiRegistro()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiUsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-09 19:25:28 --> Too few arguments to function CodeIgniter\HTTP\Response::setJSON(), 0 passed in C:\xampp\htdocs\ProyectoAppNotas\app\Controllers\ApiUsuarioController.php on line 105 and at least 1 expected
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 246.
+ 1 APPPATH\Controllers\ApiUsuarioController.php(105): CodeIgniter\HTTP\Response->setJSON()
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ApiUsuarioController->ApiRegistro()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiUsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-09 19:26:59 --> Call to a member function getResult() on int
+in APPPATH\Controllers\ApiUsuarioController.php on line 96.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ApiUsuarioController->ApiRegistro()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiUsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-09 19:28:12 --> Undefined variable $response
+in APPPATH\Controllers\ApiUsuarioController.php on line 105.
+ 1 APPPATH\Controllers\ApiUsuarioController.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\ApiUsuarioController.php', 105)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ApiUsuarioController->ApiRegistro()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiUsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')

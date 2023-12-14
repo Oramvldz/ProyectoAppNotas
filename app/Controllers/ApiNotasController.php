@@ -47,8 +47,16 @@ class ApiNotasController extends ResourceController
     public function ApiSeleccionarNotas($Idusuario=null)
     {
         $NotasModel=new NotasModel();
-        $Data['Notas']=$NotasModel->orderby('Id','desc')->getwhere(['Id_usuario'=>$Idusuario])->getResult();
-        return $this->respond($Data['Notas']);
+        $Data=$NotasModel->orderby('Id','desc')->getwhere(['Id_usuario'=>$Idusuario])->getResult();
+        if(count($Data)>0)
+        {
+            return $this->respond($Data);
+        }
+        else
+        {
+            return $this->failNotFound();
+
+        }
     }
 
     /**

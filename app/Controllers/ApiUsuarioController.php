@@ -80,24 +80,35 @@ class ApiUsuarioController extends ResourceController
     {
         //REGISTRO
         $UsuarioModel= new UsuarioModel();
+
+        $Email=$this->request->getVar('Email');
         $Datos=[
-            'Email'=> $this->request->getVar('Email'),
+            'Email'=>$Email,
             'Pass'=> $this->request->getVar('Pass'),
             'Nombres'=> $this->request->getVar('Nombres'),
             'Apellidos'=> $this->request->getVar('Apellidos')
         ];
+        
+        $UsuarioEncontrado=$UsuarioModel->getWhere(['Email'=>$Email])->getResult();    
 
-        $UsuarioModel->insert($Datos);
-        //try catch falta
-        $response=[
-            'status' => 201,
-            'error' => null,
-            'messages' =>[
-                'success' => 'Recurso almacenado satisfactoriamente'
-            ]
-        ];
+        $response;
+        if(count($UsuarioEncontrado)==0)
+        {
+            $UsuarioModel->insert($Datos);
 
-        return $this->respondCreated($Datos, 201);
+            $response=[
+                'status' => 201
+            ];
+
+            return $this->respondCreated($response);
+        }
+        else{
+            $response=[
+                'status' => 409
+            ];
+
+           return $this->respond($response,'200');
+        }
     }
 
     /**
