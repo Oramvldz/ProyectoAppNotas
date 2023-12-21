@@ -16,10 +16,23 @@ class ApiUsuarioController extends ResourceController
      */
     public function ApiPerfil()
     {
+        $errors=[
+            'Error'=>"404",
+            'Mensaje'=>"Usuario no existente"
+        ];
         $UsuarioModel= new UsuarioModel();
          $id=$this->request->getVar('Id');
         $Data=$UsuarioModel->find($id);
-        return $this->respond($Data);
+        if($Data!=NULL)
+        {
+            return $this->respond($Data);
+        }
+        else
+        {
+            return $this->respond($errors, 404); 
+            //return $this->failNotFound("Usuario no Existente");
+        }
+        
     }
     /**
      * Return the properties of a resource object
