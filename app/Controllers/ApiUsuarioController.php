@@ -120,7 +120,7 @@ class ApiUsuarioController extends ResourceController
                 'status' => 409
             ];
 
-           return $this->respond($response,'200');
+           return $this->respond($response,'400');
         }
     }
 
@@ -143,19 +143,27 @@ class ApiUsuarioController extends ResourceController
     {
         $UsuarioModel=new UsuarioModel();
         
-        $DatosSolicitud=$this->request->getJSON();
-        $datos=[
-            'Email'=>$DatosSolicitud->Email,
-        ];
+        $Email=$this->request->getVar('Email');
 
-        $UsuarioModel->update($id,$DatosSolicitud);
-        //try catch falta
-        $respuesta=[
-            'estatus'=>200,
-            'error'=>null,
-            'mensaje'=>['Satisfactorio'=>'Recurso actualizado correctamente']
+        $Datos=[
+            'Email'=>$Email
         ];
-        return $this->respond($respuesta);
+        
+        $UsuarioDuplicado=$UsuarioModel->getWhere(['Email'=>$Email])->getRow();
+
+        if(!isset($UsuarioDuplicado))
+        {
+            $UsuarioModel->update($id,$Datos);
+            $respuesta=[
+                'estatus'=>200,
+                'error'=>null,
+                'mensaje'=>['Satisfactorio'=>'Recurso actualizado correctamente']
+            ];
+            return $this->respond($respuesta);
+        }else
+        {
+            return $this->failResourceExists();
+        }
     }
 
         /**
@@ -168,11 +176,11 @@ class ApiUsuarioController extends ResourceController
         $UsuarioModel=new UsuarioModel();
         
         $DatosSolicitud=$this->request->getJSON();
-        $datos=[
+        $Datos=[
             'Pass'=>$DatosSolicitud->Pass,
         ];
 
-        $UsuarioModel->update($id,$DatosSolicitud);
+        $UsuarioModel->update($id,$Datos);
         //try catch falta
         $respuesta=[
             'estatus'=>200,

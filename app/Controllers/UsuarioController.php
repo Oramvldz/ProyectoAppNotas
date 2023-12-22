@@ -106,7 +106,7 @@ class UsuarioController extends BaseController
                     'Nombres'=>$this->request->getVar('Nombres'),
                     'Apellidos'=>$this->request->getVar('Apellidos')
                 ]);
-                return redirect()->to(base_url('/Login'))->with('mensaje','1');
+                return redirect()->to(base_url('/'))->with('mensaje','1');
             }catch(\Exception $e){
                 return $e->getMessage();
             }
