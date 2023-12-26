@@ -1,0 +1,16 @@
+CRITICAL - 2023-12-21 01:23:50 --> Undefined variable $errors
+in APPPATH\Controllers\ApiUsuarioController.php on line 28.
+ 1 APPPATH\Controllers\ApiUsuarioController.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\ApiUsuarioController.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ApiUsuarioController->ApiPerfil()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiUsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')
+CRITICAL - 2023-12-21 01:24:01 --> Undefined variable $errors
+in APPPATH\Controllers\ApiUsuarioController.php on line 28.
+ 1 APPPATH\Controllers\ApiUsuarioController.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'C:\\xampp\\htdocs\\ProyectoAppNotas\\app\\Controllers\\ApiUsuarioController.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ApiUsuarioController->ApiPerfil()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiUsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ProyectoAppNotas\\public\\index.php')

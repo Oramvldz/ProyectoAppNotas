@@ -14,14 +14,15 @@ class ApiUsuarioController extends ResourceController
      *
      * @return mixed
      */
-    public function ApiPerfil()
+    public function ApiPerfil($id=null)
     {
+
         $errors=[
             'Error'=>"404",
             'Mensaje'=>"Usuario no existente"
         ];
         $UsuarioModel= new UsuarioModel();
-         $id=$this->request->getVar('Id');
+        
         $Data=$UsuarioModel->find($id);
         if($Data!=NULL)
         {

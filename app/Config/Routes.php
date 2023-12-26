@@ -38,7 +38,7 @@ $routes->post("/MisNotas/ModificarNota/Process/(:num)","NotasController::Actuali
 
 
 //Api usuarios           /*any=lo que sea que se le pase       /1/2 hace referencia a los parametros que parametro es cual dentro del uri*/
-$routes->post("/ApiPerfil","ApiUsuarioController::ApiPerfil");
+$routes->get("/ApiPerfil/(:num)","ApiUsuarioController::ApiPerfil/$1");
 $routes->post("/ApiLogin","ApiUsuarioController::ApiLogin");               //Login                                                                        
 $routes->post("/ApiRegistro","ApiUsuarioController::ApiRegistro");                            //Registro
 $routes->put("/ApiActualizarEmail/(:num)","ApiUsuarioController::ApiupdateEmail/$1");         //Actualizar email
