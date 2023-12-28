@@ -88,13 +88,12 @@ class ApiNotasController extends ResourceController
     {
         $NotasModel=new NotasModel();
         
-        $DatosSolicitud=$this->request->getJSON();
-        $datos=[
-            'Titulo'=>$DatosSolicitud->Titulo,
-            'Contenido'=>$DatosSolicitud->Contenido
+        $Datos=[
+            'Titulo'=>$this->request->getVar('Titulo'),
+            'Contenido'=>$this->request->getVar('Contenido')
         ];
 
-        $NotasModel->update($Id,$DatosSolicitud);
+        $NotasModel->update($Id,$Datos);
         //try catch falta
         $respuesta=[
             'estatus'=>200,
