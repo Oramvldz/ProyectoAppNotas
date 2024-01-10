@@ -121,7 +121,7 @@ class ApiUsuarioController extends ResourceController
                 'status' => 409
             ];
 
-           return $this->respond($response,'400');
+           return $this->respond($response,'409');
         }
     }
 
@@ -143,28 +143,41 @@ class ApiUsuarioController extends ResourceController
     public function ApiupdateEmail($id = null)
     {
         $UsuarioModel=new UsuarioModel();
-        
+        //Solicitud json
+        $EmailAntiguo=$this->request->getVar('EmailAntiguo');
+        $PassAntigua=$this->request->getVar('PassAntigua');
         $Email=$this->request->getVar('Email');
 
         $Datos=[
             'Email'=>$Email
         ];
-        
-        $UsuarioDuplicado=$UsuarioModel->getWhere(['Email'=>$Email])->getRow();
 
-        if(!isset($UsuarioDuplicado))
+        //El email tiene que corresponder con el Id (para que no pongan otro email que ni al caso)
+        $Credenciales=$UsuarioModel->getWhere(['Email'=>$EmailAntiguo,'Pass'=>$PassAntigua,'Id'=>$id])->getRow();
+        $UsuarioDuplicado=$UsuarioModel->getWhere(['Email'=>$Email])->getRow();
+        //Si las credenciales existen
+        if(isset($Credenciales))
         {
-            $UsuarioModel->update($id,$Datos);
-            $respuesta=[
-                'estatus'=>200,
-                'error'=>null,
-                'mensaje'=>['Satisfactorio'=>'Recurso actualizado correctamente']
-            ];
-            return $this->respond($respuesta);
-        }else
-        {
-            return $this->failResourceExists();
+            //Si no hay usuario duplicado
+            if(!isset($UsuarioDuplicado))
+            {
+                $UsuarioModel->update($id,$Datos);
+                $respuesta=[
+                    'estatus'=>200,
+                    'error'=>null,
+                    'mensaje'=>['Satisfactorio'=>'Recurso actualizado correctamente']
+                ];
+                return $this->respond($respuesta);
+            }else
+            {
+                return $this->failResourceExists();
+            }
         }
+        else
+        {
+            return $this->failNotFound();
+        }
+
     }
 
         /**
@@ -175,20 +188,30 @@ class ApiUsuarioController extends ResourceController
     public function ApiupdatePass($id = null)
     {
         $UsuarioModel=new UsuarioModel();
-        
-        $DatosSolicitud=$this->request->getJSON();
+        //Soliciutd json
+        $EmailAntiguo=$this->request->getVar('EmailAntiguo');
+        $PassAntigua=$this->request->getVar('PassAntigua');
+        $Pass=$this->request->getVar('Pass');
         $Datos=[
-            'Pass'=>$DatosSolicitud->Pass,
+            'Pass'=>$Pass
         ];
 
-        $UsuarioModel->update($id,$Datos);
-        //try catch falta
-        $respuesta=[
+        $Credenciales=$UsuarioModel->getWhere(['Email'=>$EmailAntiguo,'Pass'=>$PassAntigua,'Id'=>$id])->getRow();
+       
+        if(isset($Credenciales))
+        {
+            $UsuarioModel->update($id,$Datos);
+            $respuesta=[
             'estatus'=>200,
             'error'=>null,
             'mensaje'=>['Satisfactorio'=>'Recurso actualizado correctamente']
-        ];
+            ];
         return $this->respond($respuesta);
+        }
+        else
+        {
+            return $this->failNotFound();
+        }
     }
 
     /**

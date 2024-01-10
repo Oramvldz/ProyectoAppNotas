@@ -25,7 +25,6 @@ $routes->post("Perfil/Cambiar_Contraseña/Procesar","UsuarioController::UpdatePa
 $routes->get("/MisNotas/CrearNota","NotasController::VistaCrearNota");
 $routes->get("/MisNotas","NotasController::Notas");
 $routes->get("/MisNotas/ModificarNota/(:num)","NotasController::VistaModificarNota/$1");
-$routes->get("/MisNotas/VerNota","NotasController::VistaVerNota");
 $routes->get("/MisNotas/VisualizarNota/(:num)","NotasController::VistaVisualizarNota/$1");
 //Process
 //crear ruta process y el metodo en notas controller

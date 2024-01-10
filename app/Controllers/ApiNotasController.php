@@ -92,15 +92,25 @@ class ApiNotasController extends ResourceController
             'Titulo'=>$this->request->getVar('Titulo'),
             'Contenido'=>$this->request->getVar('Contenido')
         ];
+        $NotaEncontrada=$NotasModel->find($Id);
 
-        $NotasModel->update($Id,$Datos);
-        //try catch falta
-        $respuesta=[
-            'estatus'=>200,
-            'error'=>null,
-            'mensaje'=>['Satisfactorio'=>'Recurso actualizado correctamente']
-        ];
-        return $this->respond($respuesta);
+        if(isset($NotaEncontrada))
+        {
+                $NotasModel->update($Id,$Datos);
+
+                $respuesta=[
+                'estatus'=>200,
+                'error'=>null,
+                'mensaje'=>['Satisfactorio'=>'Recurso actualizado correctamente']
+            ];
+            return $this->respond($respuesta);
+        }
+        else
+        {
+            return $this->failNotFound("Nota no existente");
+        }
+
+        
     }
 
     /**
@@ -132,15 +142,23 @@ class ApiNotasController extends ResourceController
     public function Apidelete($Id = null)
     {
         $NotasModel= new NotasModel();
-        $NotasModel->delete(['Id'=>$Id]);
+        $NotaEncontrada=$NotasModel->find($Id);
+        if(isset($NotaEncontrada))
+        {
+            $NotasModel->delete(['Id'=>$Id]);
 
-        $respuesta=[
-            'estatus'=>200,
-            'error'=>null,
-            'mensaje'=>['Satisfactorio'=>'Recurso eliminado correctamente']
-        ];
-
-        return $this->respond($respuesta);
+            $respuesta=[
+                'estatus'=>200,
+                'error'=>null,
+                'mensaje'=>['Satisfactorio'=>'Recurso eliminado correctamente']
+            ];
+            return $this->respond($respuesta);
+        }
+        else
+        {
+            return $this->failNotFound("Nota no encontrada");
+        }
+        
     }
 
     //prueba de sincronizacion

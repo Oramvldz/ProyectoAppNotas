@@ -37,9 +37,7 @@ class NotasController extends BaseController
         if($this->session->get('Is_Logged'))
         {
             //poner esto en el de eliminar  
-            $Nota=$NotasModel->find($Id);
-
-            if($Nota)
+            if(isset($Nota))
             {
                 return view("ModificarNota", compact('Nota'));
             }
@@ -92,7 +90,14 @@ class NotasController extends BaseController
 
         if($this->session->get('Is_Logged'))
         {
-            return view("VerNota",compact('Nota'));
+            if(isset($Nota))
+            {
+                return view("VerNota",compact('Nota'));
+            }
+            else
+            {
+                return redirect()->to(base_url('/MisNotas'));
+            }
         }else
         {
             return redirect()->to(base_url('/'));
